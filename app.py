@@ -630,6 +630,7 @@ if selected == 'Dashboard':
                                 title=f'Estadísticas para el Equipo {option1}')
          st.write(figest)
       
+      df = get_data()
       sun = px.sunburst(
         df,
         path=['side', 'split', 'league', 'teamname'],
