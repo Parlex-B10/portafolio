@@ -2,3 +2,4 @@ streamlit-option-menu==0.3.2
 st-star-rating==0.0.6
 pdfplumber==0.5.28
 plotly==5.3.1
+openpyxl==3.0.9
