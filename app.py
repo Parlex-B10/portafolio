@@ -531,8 +531,8 @@ if selected == 'Reporte':
     )
 
     # Renderizar el gráfico de sunburst en Streamlit
-    cols.plotly_chart(sun,use_container_width = True)
-    dess.write("Grafica de sunburst para ver las victorias en las siguientes variables")
+    st.plotly_chart(sun,use_container_width = True)
+    st.write("Grafica de sunburst para ver las victorias en las siguientes variables")
 
 
 # Dashboard
@@ -630,13 +630,13 @@ if selected == 'Dashboard':
        st.write(figest)
     
     sun = px.sunburst(
-       df,
-       path=['side', 'split', 'league', 'teamname'],
-       values='result',
-       color='side',
-       color_discrete_map={'Red': 'red', 'Blue': 'blue'},
-       title=f'SunBurst'
-       )
+      filter_df,
+      path=['side', 'split', 'league', 'teamname'],
+      values='result',
+      color='side',
+      color_discrete_map={'Red': 'red', 'Blue': 'blue'},
+      title=f'SunBurst'
+      )
     
     dash2.plotly_chart(sun,use_container_width = True)
     
