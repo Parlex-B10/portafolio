@@ -695,7 +695,7 @@ if selected == 'Feedback':
                     'Nombre': [nombre],
                     'Email': [email],
                     'Comentario': [comentario],
-                    'Calificación': [calificacion]
+                    'Calificacion': [calificacion]
                 })
 
                 # Concatenar los datos existentes y los nuevos datos
@@ -709,7 +709,7 @@ if selected == 'Feedback':
                 st.write(f"Nombre: {nombre}")
                 st.write(f"Email: {email}")
                 st.write(f"Comentario: {comentario}")
-                st.write(f"Calificación: {calificacion}")
+                st.write(f"Calificacion: {calificacion}")
     else:
         star_rating = 0
         st.metric("Promedio Calificacion",f"{average_rating} {star_rating}")
@@ -743,7 +743,7 @@ if selected == 'Feedback':
                     'Nombre': [nombre],
                     'Email': [email],
                     'Comentario': [comentario],
-                    'Calificación': [calificacion]
+                    'Calificacion': [calificacion]
                 })
 
                 # Concatenar los datos existentes y los nuevos datos
