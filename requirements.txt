@@ -8,6 +8,6 @@ fpdf2
 pdf2image
 dash
 wand
-plotly.express
+plotly.express ==  0.4.1
 numpy
 pandas
