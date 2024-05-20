@@ -634,6 +634,18 @@ if selected == 'Dashboard':
                   color_discrete_sequence=['skyblue'], opacity=0.8,
                   title=f'Victorias por campión para el Equipo {option1}')
       st.write(fig2)
+      
+      sun = px.sunburst(
+        df,
+        path=['side', 'split', 'league', 'teamname'],
+        values='result',
+        color='side',
+        color_discrete_map={'Red': 'red', 'Blue': 'blue'},
+        title=f'SunBurst'
+      )
+
+      # Renderizar el gráfico de sunburst en Streamlit
+      st.plotly_chart(sun)
   
 
 # Feedback
