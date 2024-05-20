@@ -713,7 +713,7 @@ if selected == "Feedback":
 
     # Mostrar los resultados en Streamlit
     st.title('Datos desde Snowflake')
-    df
+    dfs
 
     with st.form("feedback_form"):
         NOMBRE = st.text_area ("Nombre: ")
