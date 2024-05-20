@@ -522,7 +522,7 @@ if selected == 'Reporte':
     cols,dess= st.columns(2)
     
     sun = px.sunburst(
-        df,
+        filter_df,
         path=['side', 'split', 'league', 'teamname'],
         values='result',
         color='side',
@@ -630,7 +630,7 @@ if selected == 'Dashboard':
        st.write(figest)
     
     sun = px.sunburst(
-       df,
+       filter_df,
        path=['side', 'split', 'league', 'teamname'],
        values='result',
        color='side',
