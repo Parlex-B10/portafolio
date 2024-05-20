@@ -390,15 +390,15 @@ if selected == 'Reporte':
       st.write(fig1)
 
       with descripcion:
-        
-      with st.expander("Descripción:"):
-        st.write(f'''
-      En esta gráfica podemos en que lado gana más el equipo. Ya que en teoría,
-      la orientación del mapa, la fase de selección de campeones y la distribución
-      de los objetivos hacen que jugar desde el lado azul haga mucho más probable la
-      victoria. Y en este caso el lado con más tasa de victoria es: **{maxresult}** con **{max}**
-      ''')
-    st.markdown('________________________')
+        with st.expander("Descripción:"):
+          st.write(f'''
+        En esta gráfica podemos en que lado gana más el equipo. Ya que en teoría,
+        la orientación del mapa, la fase de selección de campeones y la distribución
+        de los objetivos hacen que jugar desde el lado azul haga mucho más probable la
+        victoria. Y en este caso el lado con más tasa de victoria es: **{maxresult}** con **{max}**
+        ''')
+      st.markdown('________________________')
+    
     oplis= ["result","kills"]
   
     option3 = st.selectbox("Metrica", options = oplis)
