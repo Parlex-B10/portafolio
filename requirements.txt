@@ -7,3 +7,4 @@ poppler-utils
 fpdf2
 pdf2image
 dash
+wand
