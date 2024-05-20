@@ -43,7 +43,7 @@ selected = option_menu(None, ["Sobre Mi","Portafolio" ,"Dashboard","Reporte", "F
 
 # Referencias
 if selected == "Referencias":
-  st.markdown('<p class="font">Referencias1 📑</p>', unsafe_allow_html=True)
+  st.markdown('<p class="font">Referencias 📑</p>', unsafe_allow_html=True)
 
   url_Streaming = "https://www.kaggle.com/datasets/barthetur/league-of-legends-2024-competitive-game-dataset/data"
   st.write(f'''Para este trabajo se utilizó las bases de datos de kagle:
