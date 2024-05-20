@@ -9,3 +9,5 @@ pdf2image
 dash
 wand
 plotly.express
+numpy
+pandas
