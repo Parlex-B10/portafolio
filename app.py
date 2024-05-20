@@ -244,7 +244,7 @@ if selected == "Portafolio":
                 img_data = file.read()
                 st.image(img_data)
 
-    st.subheader("Proyect manager")
+    st.subheader("Project manager")
     PM= show_pdf("Project manager.pdf")
     st.markdown('________________________')
 
