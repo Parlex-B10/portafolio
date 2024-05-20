@@ -11,3 +11,4 @@ wand
 plotly.express 
 numpy
 pandas
+snowflake-snowpark-python
