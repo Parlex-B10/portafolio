@@ -8,6 +8,39 @@ import pdfplumber
 import tempfile
 from streamlit_star_rating import st_star_rating
 import tempfile
+import snowflake.connector
+
+
+# Configuración de conexión a Snowflake
+def create_connection():
+    conn = snowflake.connector.connect(
+        user='ALEXPAREDES',
+        password='24Noviembre.',
+        account='jvrqxna-dm66101',
+        database='PORTAFOLIO',
+        schema='FACTTABLE'
+    )
+    return conn
+
+# Crear tabla de feedback si no existe
+def create_feedback_table():
+    conn = create_connection()
+    cursor = conn.cursor()
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS feedback (
+            IDR NUMBER AUTOINCREMENT,
+            NOMBRE STRING,
+            CORREO STRING,
+            COMENTARIO STRING,
+            CALIFICACION NUMBER
+        )
+    """)
+    cursor.close()
+    conn.close()
+
+# Llamar a la función para asegurarse de que la tabla está creada
+create_feedback_table()
+
 
 
 
@@ -647,114 +680,57 @@ if selected == 'Dashboard':
       dash2.plotly_chart(sun, use_container_width = True )
   
 
+
 # Feedback
-if selected == 'Feedback':
+if selected == "Feedback":
     st.markdown(""" <style> .font {
     font-size:35px ; font-family: 'Cooper Black'; color: #003399;}
-               </style> """,unsafe_allow_html=True)
-    st.markdown('<p class="font">Feedback 📬</p>', unsafe_allow_html=True)
+    </style> """,unsafe_allow_html=True)
+    st.markdown('<p class="font">Feedback 📝</p>', unsafe_allow_html=True)
 
+    cursor = create_connection().cursor()
+    # Consulta para obtener datos
+    
+    query = """
+        SELECT *
+        FROM feedback
+    """
 
-    # Leer el archivo Excel para obtener el último ID de registro
-    existing_data = pd.read_excel("forms.xlsx")
-    last_id = existing_data['IDR'].max() if not existing_data.empty else 0
+    # Ejecutar la consulta
+    cursor.execute(query)
+    # Obtener los nombres de las columnas
+    column_names = [col[0] for col in cursor.description]
 
-    st.markdown('''<p style='font-size: 25px; color: #008000;'>Promedio de calificación </p>''', unsafe_allow_html=True)
-   
-    average_rating = round(existing_data["Calificación"].mean(), 1)
-    if average_rating >= 1:
-        star_rating = "⭐" * int(average_rating)
-        st.metric("Promedio Calificacion",f"{average_rating} {star_rating}")
+    # Obtener los datos
+    data = cursor.fetchall()
 
-        # Crear el formulario en Streamlit
-        with st.form(key='Feedback'):  
-            nombre = st.text_input("*Nombre:")
-            email = st.text_input("*Email:")
-            comentario = st.text_area("Comentario:")
-            calificacion = st_star_rating("Califica tu experiencia", maxValue=5, defaultValue=3, key="rating")
+    # Crear un DataFrame de pandas
+    dfs = pd.DataFrame(data, columns=column_names)
 
-            # Botón para enviar el formulario
-            submit_button = st.form_submit_button(label='Enviar')
+    # Cerrar el cursor y la conexión
+    cursor.close()
+    create_connection().close()
 
-        # Verificar si el botón de envío ha sido presionado
-        if submit_button:
-            # Validar campos obligatorios
-            if not nombre:
-                st.error("El campo 'Nombre' es obligatorio.")
-            elif not calificacion:
-                st.error("El campo 'Calificación' es obligatorio.")
-            elif not email:
-                st.error("El campo de 'Email' es obligatorio")
-            else:
-                # Incrementar el ID de registro
-                last_id = last_id + 1
-                
-                # Crear un nuevo DataFrame con los datos del formulario actual
-                new_data = pd.DataFrame({
-                    'IDR': [last_id],
-                    'Nombre': [nombre],
-                    'Email': [email],
-                    'Comentario': [comentario],
-                    'Calificacion': [calificacion]
-                })
+    # Mostrar los resultados en Streamlit
+    st.title('Datos desde Snowflake')
+    df
 
-                # Concatenar los datos existentes y los nuevos datos
-                all_data = pd.concat([existing_data, new_data], ignore_index=True)
+    with st.form("feedback_form"):
+        NOMBRE = st.text_area ("Nombre: ")
+        CORREO = st.text_area ("Correo: ")
+        COMENTARIO = st.text_area("Comentarios:")
+        CALIFICACION = st_star_rating("Califica tu experiencia", maxValue=5, defaultValue=5, key="rating")
 
-                # Guardar todo en el archivo Excel
-                all_data.to_excel("forms.xlsx", index=False)
-                
-                st.write("Gracias por tu feedback!")
-                st.write(f"ID de Registro: {last_id}")
-                st.write(f"Nombre: {nombre}")
-                st.write(f"Email: {email}")
-                st.write(f"Comentario: {comentario}")
-                st.write(f"Calificacion: {calificacion}")
-    else:
-        star_rating = 0
-        st.metric("Promedio Calificacion",f"{average_rating} {star_rating}")
+        submitted = st.form_submit_button("Enviar")
 
-        # Crear el formulario en Streamlit
-        with st.form(key='Feedback'):  
-            nombre = st.text_input("*Nombre:")
-            email = st.text_input("*Email:")
-            comentario = st.text_area("Comentario:")
-            calificacion = st_star_rating("Califica tu experiencia", maxValue=5, defaultValue=3, key="rating")
-
-            # Botón para enviar el formulario
-            submit_button = st.form_submit_button(label='Enviar')
-
-        # Verificar si el botón de envío ha sido presionado
-        if submit_button:
-            # Validar campos obligatorios
-            if not nombre:
-                st.error("El campo 'Nombre' es obligatorio.")
-            elif not calificacion:
-                st.error("El campo 'Calificación' es obligatorio.")
-            elif not email:
-                st.error("El campo de 'Email' es obligatorio")
-            else:
-                # Incrementar el ID de registro
-                last_id = last_id + 1
-                
-                # Crear un nuevo DataFrame con los datos del formulario actual
-                new_data = pd.DataFrame({
-                    'IDR': [last_id],
-                    'Nombre': [nombre],
-                    'Email': [email],
-                    'Comentario': [comentario],
-                    'Calificacion': [calificacion]
-                })
-
-                # Concatenar los datos existentes y los nuevos datos
-                all_data = pd.concat([existing_data, new_data], ignore_index=True)
-
-                # Guardar todo en el archivo Excel
-                all_data.to_excel("forms.xlsx", index=False)
-                
-                st.write("Gracias por tu feedback!")
-                st.write(f"ID de Registro: {last_id}")
-                st.write(f"Nombre: {nombre}")
-                st.write(f"Email: {email}")
-                st.write(f"Comentario: {comentario}")
-                st.write(f"Calificación: {calificacion}")  
+        if submitted:
+            # Insertar feedback en Snowflake
+            conn = create_connection()
+            cursor = conn.cursor()
+            cursor.execute("""
+                INSERT INTO feedback (NOMBRE, CORREO,COMENTARIO,CALIFICACION) VALUES (%s, %s,%s,%s)
+            """, (NOMBRE, CORREO,COMENTARIO,CALIFICACION))
+            conn.commit()
+            cursor.close()
+            conn.close()
+            st.success("¡Gracias por tu feedback!")
