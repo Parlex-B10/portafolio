@@ -1,13 +1,13 @@
 streamlit-option-menu
-st-star-rating==0.0.6
-pdfplumber==0.5.28
-plotly==5.22.0
-openpyxl==3.1.0
+st-star-rating
+pdfplumber
+plotly
+openpyxl
 poppler-utils
 fpdf2
 pdf2image
 dash
 wand
-plotly.express ==  0.4.1
+plotly.express 
 numpy
 pandas
