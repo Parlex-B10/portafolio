@@ -11,7 +11,7 @@ import tempfile
 
 
 
-st.set_page_config(page_title="Alejandro Paredes", page_icon=":bar_chart:", layout="wide")
+st.set_page_config(page_title="Alejandro Paredes 1", page_icon=":bar_chart:", layout="wide")
 hide_st_style = """
 <style>
 #MainMenu {
