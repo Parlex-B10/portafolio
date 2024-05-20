@@ -533,7 +533,6 @@ if selected == 'Reporte':
 
       # Renderizar el gráfico de sunburst en Streamlit
       st.plotly_chart(sun,use_container_width = True)
-      st.write("Grafica de sunburst para ver las victorias en las siguientes variables")
 
 
 # Dashboard
@@ -645,7 +644,7 @@ if selected == 'Dashboard':
       )
 
       # Renderizar el gráfico de sunburst en Streamlit
-      st.plotly_chart(sun)
+      dash2.plotly_chart(sun, use_container_width = True )
   
 
 # Feedback
