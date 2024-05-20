@@ -630,18 +630,6 @@ if selected == 'Dashboard':
                                 title=f'Estadísticas para el Equipo {option1}')
          st.write(figest)
       
-      df = get_data()
-      sun = px.sunburst(
-        df,
-        path=['side', 'split', 'league', 'teamname'],
-        values='result',
-        color='side',
-        color_discrete_map={'Red': 'red', 'Blue': 'blue'},
-        title=f'SunBurst'
-        )
-      
-      dash2.plotly_chart(sun,use_container_width = True)
-      
       fig2 = px.bar(df_groupedchamp, x='champion', y='result',
                   color_discrete_sequence=['skyblue'], opacity=0.8,
                   title=f'Victorias por campión para el Equipo {option1}')
