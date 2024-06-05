@@ -15,7 +15,7 @@ import snowflake.connector
 def create_connection():
     conn = snowflake.connector.connect(
         user='ALEXPAREDES',
-        password='24Noviembre.',
+        password='Proyecto345.',
         account='jvrqxna-dm66101',
         database='PORTAFOLIO',
         schema='FACTTABLE'
