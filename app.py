@@ -838,7 +838,7 @@ if sm=='English':
     
         st.markdown('________________________')
     
-        st.header('Experiencias')
+        st.header('Experiences')
         st.markdown('________________________')
     
         imagen1 = Image.open(r'Buenfin.jpg')
