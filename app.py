@@ -955,7 +955,7 @@ if sm=='English':
         at the forefront of my field and provide innovative solutions that drive continuous improvement 
         and business success. \n
     
-        \nHabilidades:\n
+        \Skills:\n
         
         ▪Critical Thinking\n
         ▪TeamWork\n
@@ -964,7 +964,7 @@ if sm=='English':
         ▪Creativity\n
         ▪Leadership\n
     
-        \nHabilidades tecnológicas:\n
+        \nIT Skills:\n
         
         ▪Excel\n
         ▪Google Sheets\n
@@ -982,23 +982,23 @@ if sm=='English':
     
       st.markdown('________________________')
     
-      st.markdown('<p class="font">Idiomas 🌐</p>', unsafe_allow_html=True)
+      st.markdown('<p class="font">Languages 🌐</p>', unsafe_allow_html=True)
       st.write(f'''
-      -Español (Nativo)\n
-      -Inglés (Intermedio B2)\n
-      -Japonés (Principiante A2)\n
+      -Spanish (Native)\n
+      -English (Intermediate B2)\n
+      -Japanese (Beginner A2)\n
       ''')
     
       st.markdown('________________________')
     
-      st.markdown('<p class="font">Educación 🎓</p>', unsafe_allow_html=True)
-      st.markdown('''<p style='font-size: 25px;'>Ingeniería en Transformación Digital de Negocios </p>''', unsafe_allow_html=True)
-      st.write(f'''Promedio: 95.68 \n''')
-      st.write(f'''Tecnológico de Monterrey, Campus Monterrey, Agosto 2020 - Junio 2024''')
+      st.markdown('<p class="font">Education 🎓</p>', unsafe_allow_html=True)
+      st.markdown('''<p style='font-size: 25px;'>Digital Business Transformation Engineering </p>''', unsafe_allow_html=True)
+      st.write(f'''Grade point average: 95.68 \n''')
+      st.write(f'''Tecnológico de Monterrey, Campus Monterrey, August 2020 - June 2024''')
     
-      st.markdown('<p class="font">Experiencia 💼</p>', unsafe_allow_html=True)
+      st.markdown('<p class="font">Experience 💼</p>', unsafe_allow_html=True)
       st.markdown('''<p style='font-size: 25px;'>Digitalent Whirlpool - Analyst D2C LARN 👨🏻‍💻</p>''', unsafe_allow_html=True)
-      st.write(f'''Septiembre 2023 - Actualmente ''')
+      st.write(f'''September 2023 - August 2024 ''')
       st.write(f'''
       ▪Creación de Dashboards en Looker Studio \n
       ▪Tratamiento de datos en Python \n
