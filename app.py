@@ -18,7 +18,7 @@ def create_connection():
         password='24Nov2001.',
         account='siuhmcn-mo37359',
         database='PORTAFOLIO',
-        schema='FACTTABLE'
+        schema='Alex'
     )
     return conn
 
