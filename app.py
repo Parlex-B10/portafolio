@@ -271,7 +271,7 @@ if sm=='Español':
         Cuento con experiencia en la transformación y análisis de datos para la toma de decisiones estratégicas, así como en la 
         creación de dashboards que han optimizado significativamente el monitoreo de KPIs y la toma de decisiones.
         Estoy en constante búsqueda de nuevas habilidades y tecnologías para mantenerme a la vanguardia en mi campo y 
-        ofrecer soluciones innovadoras que impulsen la mejora continua y el éxito empresarial. \n
+        ofrecer soluciones innovadoras que impulsen la mejora continua y el éxito empresarial.\n
     
         \nHabilidades:\n
         ▪Pensamiento crítico\n
