@@ -275,7 +275,7 @@ if sm=='Español':
     
         \nHabilidades:\n
         
-        ▪Pensamiento crítico\n
+            ▪Pensamiento crítico\n
         ▪Trabajo en equipo\n
         ▪Interpretación de datos\n
         ▪Innovación\n
