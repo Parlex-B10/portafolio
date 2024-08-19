@@ -70,7 +70,7 @@ def get_data():
 
 df = get_data()
 sm = st.radio("Selecciona variable",('Español','English'))
-if sm='Español':
+if sm=='Español':
     selected = option_menu(None, ["Sobre Mi","Portafolio" ,"Dashboard","Reporte", "Feedback", "Referencias"],
         icons=["person-vcard", "folder-fill", 'pie-chart-fill','clipboard-data-fill', 'chat-square-heart-fill', 'database-fill'],
         menu_icon="cast", default_index=0, orientation="horizontal")
