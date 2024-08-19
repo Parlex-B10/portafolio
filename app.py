@@ -257,104 +257,107 @@ if selected == "Portafolio":
 # Sobre Mi
 if selected == 'Sobre Mi':
 
-  st.markdown(""" <style> .font {
-  font-size:35px ; font-family: 'Cooper Black'; color: #003399;}
-  </style> """,unsafe_allow_html=True)
-  st.markdown('<p class="font">Sobre mi 👨🏻‍💼💻</p>', unsafe_allow_html=True)
-  st.write(f'''Bienvenidos a mi página web, yo soy Alejandro Paredes Balgañon.''')
-
-  col1, col2 = st.columns([2, 1])
-
-  with col1:
-    st.write(f'''\n
-    Soy Ingeniero en Transformación Digital de Negocios con una profunda pasión por el análisis y la visualización de datos. 
-    Cuento con experiencia en la transformación y análisis de datos para la toma de decisiones estratégicas, así como en la 
-    creación de dashboards que han optimizado significativamente el monitoreo de KPIs y la toma de decisiones. 
+  sm = st.radio("Selecciona variable",('Español','English'))
+  if sm='Español':
+      st.markdown(""" <style> .font {
+      font-size:35px ; font-family: 'Cooper Black'; color: #003399;}
+      </style> """,unsafe_allow_html=True)
+      st.markdown('<p class="font">Sobre mi 👨🏻‍💼💻</p>', unsafe_allow_html=True)
+      st.write(f'''Bienvenidos a mi página web, yo soy Alejandro Paredes Balgañon.''')
     
-    Estoy en constante búsqueda de nuevas habilidades y tecnologías para mantenerme a la vanguardia en mi campo y 
-    ofrecer soluciones innovadoras que impulsen la mejora continua y el éxito empresarial. \n
-
-    \nHabilidades:\n
-    ▪Pensamiento crítico\n
-    ▪Trabajo en equipo\n
-    ▪Interpretación de datos\n
-    ▪Innovación\n
-    ▪Creatividad\n
-    ▪Liderazgo\n
-
-    \nHabilidades tecnológicas:\n
-    ▪Excel\n
-    ▪Google Sheets\n
-    ▪SQL\n
-    ▪Power BI\n
-    ▪Looker Studio\n
-    ▪Python\n
-    ▪BigQuery\n
-    ▪Sharepoint\n
-    ▪Snowflake\n
-
-    \nMotivación:\n
-    \n
-    Soy un profesional altamente motivado y con un gran interés en el análisis de datos
-    y su aplicación para la toma de decisiones estratégicas. Me apasiona utilizar mi conocimiento
-    y habilidades para ayudar a las empresas a mejorar sus procesos y alcanzar sus objetivos. Estoy
-    siempre buscando nuevos retos y oportunidades para aprender y crecer profesionalmente.\n 
-    Soy una persona comprometida y entusiasta de los retos, siempre en búsqueda de oportunidades 
-    para mejorar y desarrollar mis habilidades. Mi objetivo es generar valor significativo para 
-    la empresa a través de mi constante impulso hacia la mejora continua.
-    ''')
-
-  with col2:
-    st.image(r'Yo.jpg', use_column_width=True)
-
-  st.markdown('________________________')
-
-  st.markdown('<p class="font">Idiomas 🌐</p>', unsafe_allow_html=True)
-  st.write(f'''
-  -Español (Nativo)\n
-  -Inglés (Intermedio B2)\n
-  -Japonés (Principiante A2)\n
-  ''')
-
-  st.markdown('________________________')
-
-  st.markdown('<p class="font">Educación 🎓</p>', unsafe_allow_html=True)
-  st.markdown('''<p style='font-size: 25px;'>Ingeniería en Transformación Digital de Negocios </p>''', unsafe_allow_html=True)
-  st.write(f'''Promedio: 95.68 \n
-  Tecnológico de Monterrey, Campus Monterrey \n
-  Agosto 2020 - Junio 2024''')
-
-  st.markdown('<p class="font">Experiencia 💼</p>', unsafe_allow_html=True)
-  st.markdown('''<p style='font-size: 25px;'>Digitalent Whirlpool - Analyst D2C LARN 👨🏻‍💻</p>''', unsafe_allow_html=True)
-  st.write(f'''Septiembre 2023 - Actualmente ''')
-  st.write(f'''
-  ▪Creación de Dashboards en Looker Studio \n
-  ▪Tratamiento de datos en Python \n
-  ▪Uso de APIs para obtener información de los sistemas transaccionales \n
-  ▪Análisis de datos y obtención de insights \n
-  ▪Planeación de inversión de presupuestos en Paid media LARN 2024 \n
-  ▪Automatizaciones de procesos \n
-  ▪Proceso de facturación \n
-  ▪Seguimiento de pagos con proveedores''')
-  st.markdown('________________________')
-
-  contacto_style = """<style>.contacto-section {
-      background-color: black;
-      padding: 20px;
-      border-radius: 10px;
-      color: white;
-      }</style>"""
-
-  st.markdown(contacto_style, unsafe_allow_html=True)
-  st.markdown('<p class="font">Contactar 🔔</p>', unsafe_allow_html=True)
-
-  st.markdown('''
-  <p class="contacto-section">
-      ✉️ alejandroparedesbalga@gmail.com <br>
-      📱 4774057793 <br>
-      🌎 Monterrey, Nuevo León
-  </p>
-  ''', unsafe_allow_html=True)
+      col1, col2 = st.columns([2, 1])
+    
+      with col1:
+        st.write(f'''\n
+        
+        Soy Ingeniero en Transformación Digital de Negocios con una profunda pasión por el análisis y la visualización de datos. 
+        Cuento con experiencia en la transformación y análisis de datos para la toma de decisiones estratégicas, así como en la 
+        creación de dashboards que han optimizado significativamente el monitoreo de KPIs y la toma de decisiones. 
+        
+        Estoy en constante búsqueda de nuevas habilidades y tecnologías para mantenerme a la vanguardia en mi campo y 
+        ofrecer soluciones innovadoras que impulsen la mejora continua y el éxito empresarial. \n
+    
+        \nHabilidades:\n
+        ▪Pensamiento crítico\n
+        ▪Trabajo en equipo\n
+        ▪Interpretación de datos\n
+        ▪Innovación\n
+        ▪Creatividad\n
+        ▪Liderazgo\n
+    
+        \nHabilidades tecnológicas:\n
+        ▪Excel\n
+        ▪Google Sheets\n
+        ▪SQL\n
+        ▪Power BI\n
+        ▪Looker Studio\n
+        ▪Python\n
+        ▪BigQuery\n
+        ▪Sharepoint\n
+        ▪Snowflake\n
+    
+        \nMotivación:\n
+        \n
+        Soy un profesional altamente motivado y con un gran interés en el análisis de datos
+        y su aplicación para la toma de decisiones estratégicas. Me apasiona utilizar mi conocimiento
+        y habilidades para ayudar a las empresas a mejorar sus procesos y alcanzar sus objetivos. Estoy
+        siempre buscando nuevos retos y oportunidades para aprender y crecer profesionalmente.\n 
+        Soy una persona comprometida y entusiasta de los retos, siempre en búsqueda de oportunidades 
+        para mejorar y desarrollar mis habilidades. Mi objetivo es generar valor significativo para 
+        la empresa a través de mi constante impulso hacia la mejora continua.
+        ''')
+    
+      with col2:
+        st.image(r'Yo.jpg', use_column_width=True)
+    
+      st.markdown('________________________')
+    
+      st.markdown('<p class="font">Idiomas 🌐</p>', unsafe_allow_html=True)
+      st.write(f'''
+      -Español (Nativo)\n
+      -Inglés (Intermedio B2)\n
+      -Japonés (Principiante A2)\n
+      ''')
+    
+      st.markdown('________________________')
+    
+      st.markdown('<p class="font">Educación 🎓</p>', unsafe_allow_html=True)
+      st.markdown('''<p style='font-size: 25px;'>Ingeniería en Transformación Digital de Negocios </p>''', unsafe_allow_html=True)
+      st.write(f'''Promedio: 95.68 \n
+      Tecnológico de Monterrey, Campus Monterrey \n
+      Agosto 2020 - Junio 2024''')
+    
+      st.markdown('<p class="font">Experiencia 💼</p>', unsafe_allow_html=True)
+      st.markdown('''<p style='font-size: 25px;'>Digitalent Whirlpool - Analyst D2C LARN 👨🏻‍💻</p>''', unsafe_allow_html=True)
+      st.write(f'''Septiembre 2023 - Actualmente ''')
+      st.write(f'''
+      ▪Creación de Dashboards en Looker Studio \n
+      ▪Tratamiento de datos en Python \n
+      ▪Uso de APIs para obtener información de los sistemas transaccionales \n
+      ▪Análisis de datos y obtención de insights \n
+      ▪Planeación de inversión de presupuestos en Paid media LARN 2024 \n
+      ▪Automatizaciones de procesos \n
+      ▪Proceso de facturación \n
+      ▪Seguimiento de pagos con proveedores''')
+      st.markdown('________________________')
+    
+      contacto_style = """<style>.contacto-section {
+          background-color: black;
+          padding: 20px;
+          border-radius: 10px;
+          color: white;
+          }</style>"""
+    
+      st.markdown(contacto_style, unsafe_allow_html=True)
+      st.markdown('<p class="font">Contactar 🔔</p>', unsafe_allow_html=True)
+    
+      st.markdown('''
+      <p class="contacto-section">
+          ✉️ alejandroparedesbalga@gmail.com <br>
+          📱 4774057793 <br>
+          🌎 Monterrey, Nuevo León
+      </p>
+      ''', unsafe_allow_html=True)
 
 # Reporte
 if selected == 'Reporte':
