@@ -266,7 +266,7 @@ if selected == 'Sobre Mi':
   col1, col2 = st.columns([2, 1])
 
   with col1:
-    st.write(f'''
+    st.write(f'''\n
     Soy Ingeniero en Transformación Digital de Negocios con una profunda pasión por el análisis y la visualización de datos. 
     Cuento con experiencia en la transformación y análisis de datos para la toma de decisiones estratégicas, así como en la 
     creación de dashboards que han optimizado significativamente el monitoreo de KPIs y la toma de decisiones. 
