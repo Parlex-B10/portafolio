@@ -395,7 +395,7 @@ if sm=='Español':
     
         col1, col2, col3,col4,col5,col6 = st.columns(6)
         with col1:
-            st.subheader("Total Duración:")
+            st.subheader("Duración Promedio de Partida:")
             st.subheader(f"⏱ {duration_formatted}")
         with col2:
             st.subheader("Total Oro:")
