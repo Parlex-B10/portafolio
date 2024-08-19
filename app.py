@@ -291,9 +291,13 @@ if sm=='Español':
         ▪BigQuery\n
         ▪Sharepoint\n
         ▪Snowflake\n
-    
+
+        ''')
+        
+        st.write(f''' 
         \nMotivación:\n
-    
+        ''')
+        st.write(f'''
         Soy un profesional altamente motivado y con un gran interés en el análisis de datos
         y su aplicación para la toma de decisiones estratégicas. Me apasiona utilizar mi conocimiento
         y habilidades para ayudar a las empresas a mejorar sus procesos y alcanzar sus objetivos. Estoy
