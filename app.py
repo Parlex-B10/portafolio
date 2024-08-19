@@ -955,7 +955,7 @@ if sm=='English':
         at the forefront of my field and provide innovative solutions that drive continuous improvement 
         and business success. \n
     
-        \Skills:\n
+        \nSkills:\n
         
         ▪Critical Thinking\n
         ▪TeamWork\n
