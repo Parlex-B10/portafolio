@@ -324,10 +324,26 @@ if sm=='Español':
       st.markdown('''<p style='font-size: 25px;'>Ingeniería en Transformación Digital de Negocios </p>''', unsafe_allow_html=True)
       st.write(f'''Promedio: 95.68 \n''')
       st.write(f'''Tecnológico de Monterrey, Campus Monterrey, Agosto 2020 - Junio 2024''')
+      
+      st.markdown('<p class="font">Especialización</p>', unsafe_allow_html=True)
+      st.markdown('''<p style='font-size: 25px;'>Analítica de datos y herramientas de inteligencia artificial </p>''', unsafe_allow_html=True)
+      st.write(f'''Tecnológico de Monterrey, Campus Monterrey, Agosto 2023 - Diciembre 2023''')
     
       st.markdown('<p class="font">Experiencia 💼</p>', unsafe_allow_html=True)
+        
+      st.markdown('''<p style='font-size: 25px;'>Farmacias del Ahorro - Especialista en Datos Omnicanalidad 📊</p>''', unsafe_allow_html=True)
+      st.write(f'''Agosto 2024 - Actualmente ''')
+      st.write(f'''
+      ▪Creación de Dashboards en Looker \n
+      ▪Obtención de datos en BigQuery \n
+      ▪Establecer promociones de campañas en base al análisis de datos \n
+      ▪Planeación y seguimiento de campañas\n
+      ▪Desarrollo y Optimización de Queries\n
+      ▪Reportes de resultados de capañas mensual''')
+      st.markdown('________________________')
+        
       st.markdown('''<p style='font-size: 25px;'>Digitalent Whirlpool - Analyst D2C LARN 👨🏻‍💻</p>''', unsafe_allow_html=True)
-      st.write(f'''Septiembre 2023 - Actualmente ''')
+      st.write(f'''Septiembre 2023 - Agosto 2024 ''')
       st.write(f'''
       ▪Creación de Dashboards en Looker Studio \n
       ▪Tratamiento de datos en Python \n
@@ -594,7 +610,7 @@ if sm=='Español':
     
         filter_df = df[(df["teamname"] == option1) & (df["playername"].isin(option2))]
     
-        total_seconds = filter_df["gamelength"].sum()  # Obtener la duración total en segundos
+        total_seconds = filter_df["gamelength"].mean()  # Obtener la duración total en segundos
         hours = total_seconds // 3600
         minutes = (total_seconds % 3600) // 60
         seconds = total_seconds % 60
@@ -609,7 +625,7 @@ if sm=='Español':
     
         col1, col2, col3,col4,col5,col6 = st.columns(6)
         with col1:
-            st.subheader("Total Duración:")
+            st.subheader("Duración Promedio de Partida:")
             st.subheader(f"⏱ {duration_formatted}")
         with col2:
             st.subheader("Total Oro:")
