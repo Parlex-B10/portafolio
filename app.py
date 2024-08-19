@@ -267,11 +267,12 @@ if selected == 'Sobre Mi':
 
   with col1:
     st.write(f'''
-    Ingeniero en Transformación Digital de Negocios apasionado por el análisis
-    y la visualización de datos, con experiencia en la transformación de datos y
-    la creación de dashboards que han optimizado la toma de decisiones y el monitoreo
-    de KPIs. Busco constantemente desarrollar nuevas habilidades y conocer sobre nuevas
-    tecnologías para mantenerme a la vanguardia del campo. \n
+    Soy Ingeniero en Transformación Digital de Negocios con una profunda pasión por el análisis y la visualización de datos. 
+    Cuento con experiencia en la transformación y análisis de datos para la toma de decisiones estratégicas, así como en la 
+    creación de dashboards que han optimizado significativamente el monitoreo de KPIs y la toma de decisiones. 
+    
+    Estoy en constante búsqueda de nuevas habilidades y tecnologías para mantenerme a la vanguardia en mi campo y 
+    ofrecer soluciones innovadoras que impulsen la mejora continua y el éxito empresarial. \n
 
     \nHabilidades:\n
     ▪Pensamiento crítico\n
@@ -288,6 +289,8 @@ if selected == 'Sobre Mi':
     ▪Power BI\n
     ▪Looker Studio\n
     ▪Python\n
+    ▪BigQuery\n
+    ▪Sharepoint\n
     ▪Snowflake\n
 
     \nMotivación:\n
@@ -295,6 +298,10 @@ if selected == 'Sobre Mi':
     y su aplicación para la toma de decisiones estratégicas. Me apasiona utilizar mi conocimiento
     y habilidades para ayudar a las empresas a mejorar sus procesos y alcanzar sus objetivos. Estoy
     siempre buscando nuevos retos y oportunidades para aprender y crecer profesionalmente.
+
+    Soy una persona comprometida y entusiasta de los retos, siempre en búsqueda de oportunidades 
+    para mejorar y desarrollar mis habilidades. Mi objetivo es generar valor significativo para 
+    la empresa a través de mi constante impulso hacia la mejora continua.
     ''')
 
   with col2:
