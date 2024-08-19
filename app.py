@@ -293,18 +293,6 @@ if sm=='Español':
         ▪Snowflake\n
 
         ''')
-        
-        st.write(f''' 
-        \nMotivación:\n
-        ''')
-        st.write(f'''
-        Soy un profesional altamente motivado y con un gran interés en el análisis de datos
-        y su aplicación para la toma de decisiones estratégicas. Me apasiona utilizar mi conocimiento
-        y habilidades para ayudar a las empresas a mejorar sus procesos y alcanzar sus objetivos. Estoy
-        siempre buscando nuevos retos y oportunidades para aprender y crecer profesionalmente. 
-        Soy una persona comprometida y entusiasta de los retos, siempre en búsqueda de oportunidades 
-        para mejorar y desarrollar mis habilidades.
-        ''')
     
       with col2:
         st.image(r'Yo.jpg', use_column_width=True)
@@ -944,31 +932,32 @@ if sm=='English':
       if opt == 'Certifications/Recognition':
         st.markdown('________________________')
     
-    # Sobre Mi
-    if selected == 'Sobre Mi':
+    # About me
+    if selected == 'About me':
       st.markdown(""" <style> .font {
       font-size:35px ; font-family: 'Cooper Black'; color: #003399;}
       </style> """,unsafe_allow_html=True)
       st.markdown('<p class="font">Sobre mi 👨🏻‍💼💻</p>', unsafe_allow_html=True)
-      st.write(f'''Bienvenidos a mi página web, yo soy Alejandro Paredes Balgañon.''')
+      st.write(f'''Welcome to my web page, I am Alejandro Paredes Balgañon.''')
     
       col1, col2 = st.columns([2, 1])
     
       with col1:
         st.write(f'''
-        \nSoy Ingeniero en Transformación Digital de Negocios con una profunda pasión por el análisis y la visualización de datos. 
-        Cuento con experiencia en la transformación y análisis de datos para la toma de decisiones estratégicas, así como en la 
-        creación de dashboards que han optimizado significativamente el monitoreo de KPIs y la toma de decisiones.
-        Estoy en constante búsqueda de nuevas habilidades y tecnologías para mantenerme a la vanguardia en mi campo y 
-        ofrecer soluciones innovadoras que impulsen la mejora continua y el éxito empresarial. \n
+        \nI am a Digital Business Transformation Engineer with a deep passion for data analysis 
+        and visualization. I have experience in data transformation and analysis for strategic 
+        decision-making, as well as in creating dashboards that have significantly optimized KPI 
+        monitoring and decision-making. I am constantly seeking new skills and technologies to stay 
+        at the forefront of my field and provide innovative solutions that drive continuous improvement 
+        and business success. \n
     
         \nHabilidades:\n
-        ▪Pensamiento crítico\n
-        ▪Trabajo en equipo\n
-        ▪Interpretación de datos\n
-        ▪Innovación\n
-        ▪Creatividad\n
-        ▪Liderazgo\n
+        ▪Critical Thinking\n
+        ▪TeamWork\n
+        ▪Data Interpretation\n
+        ▪Innovation\n
+        ▪Creativity\n
+        ▪Leadership\n
     
         \nHabilidades tecnológicas:\n
         ▪Excel\n
@@ -980,19 +969,6 @@ if sm=='English':
         ▪BigQuery\n
         ▪Sharepoint\n
         ▪Snowflake\n
-
-        ''')
-        
-        st.write(f''' 
-        \nMotivación:\n
-        ''')
-        st.write(f'''
-        Soy un profesional altamente motivado y con un gran interés en el análisis de datos
-        y su aplicación para la toma de decisiones estratégicas. Me apasiona utilizar mi conocimiento
-        y habilidades para ayudar a las empresas a mejorar sus procesos y alcanzar sus objetivos. Estoy
-        siempre buscando nuevos retos y oportunidades para aprender y crecer profesionalmente. 
-        Soy una persona comprometida y entusiasta de los retos, siempre en búsqueda de oportunidades 
-        para mejorar y desarrollar mis habilidades.
         ''')
     
       with col2:
