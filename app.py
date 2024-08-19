@@ -272,8 +272,9 @@ if sm=='Español':
         creación de dashboards que han optimizado significativamente el monitoreo de KPIs y la toma de decisiones.
         Estoy en constante búsqueda de nuevas habilidades y tecnologías para mantenerme a la vanguardia en mi campo y 
         ofrecer soluciones innovadoras que impulsen la mejora continua y el éxito empresarial.\n
-    
-        Habilidades:\n
+        ''')
+          
+        st.write(f'''Habilidades:\n
         
         ▪Pensamiento crítico\n
         ▪Trabajo en equipo\n
@@ -281,8 +282,9 @@ if sm=='Español':
         ▪Innovación\n
         ▪Creatividad\n
         ▪Liderazgo\n
-    
-        Habilidades tecnológicas:\n
+        ''')
+          
+        st.write(f'''Habilidades tecnológicas:\n
         
         ▪Excel\n
         ▪Google Sheets\n
