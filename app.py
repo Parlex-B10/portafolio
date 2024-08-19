@@ -116,23 +116,23 @@ if sm=='Español':
         with col1:
           st.markdown('''<p style='font-size: 25px; color: #008000;'>TecStore Análisis de Datos </p>''', unsafe_allow_html=True)
           st.write('''
-          -Limpieza y corrección de datos \n
-          -Diseño de un Datawarehouse\n
+          -Limpieza y corrección de datos en SQL \n
+          -Diseño de un Datawarehouse en SQL\n
           -Creación de Dashboards en Tableau''')
     
         with col2:
           st.markdown('''<p style='font-size: 25px; color: #008000;'>LabNL Visualización de Datos </p>''', unsafe_allow_html=True)
           st.write('''
-          -Propuesta de valor\n
-          -Creación de mapa del agua con distintos filtros en Tableau\n
-          -Gráficas con los datos obtenidos\n
+          -Propuesta de valor en la administración del agua de N.L.\n
+          -Creación de mapa para mostrar la ubicación de las fuentes de agua de N.L. en Tableau\n
+          -Dashboard con gráficas, KPIs y filtros para visualizar la información\n
           Liga: https://wiki.labnuevoleon.mx/index.php?title=Innovaci%C3%B3n_para_Iniciativas_de_Transformaci%C3%B3n_Digital_-_Rastreo_del_Agua_de_Nuevo_Le%C3%B3n_equipo_2 ''')
     
         with col3:
           st.markdown('''<p style='font-size: 25px; color: #008000;'>Whirlpool Análisis de Datos </p>''', unsafe_allow_html=True)
           st.write('''
-          -Limpieza y corrección de datos\n
-          -Análisis de los datos\n
+          -Limpieza y corrección de datos en SQL\n
+          -Análisis de los datos para obtener insights\n
           -Creación de Dashboards en Power BI ''')
     
         st.markdown('________________________')
@@ -816,25 +816,25 @@ if sm=='English':
         with col4:
           st.markdown('''<p style='font-size: 25px; color: #008000;'>Consultor de Neufeld </p>''', unsafe_allow_html=True)
           st.write('''
-          -Propuesta para mejorar su negocio digital \n
-          -Costos e ingresos para saber la rentabilidad \n
-          -Desarrollo de la arquitectura, diagramas y artefactos AS IS \n
-          -Desarrollo de la arquitectura, diagramas y artefactos TO BE \n''')
+          -Proposal to improve your digital business \n
+          -Cost and revenue to determine profitability \n
+          -Development of the architecture, diagrams, and AS IS artifacts \n
+          -Development of the architecture, diagrams, and TO BE artifacts \n''')
     
         with col5:
           st.markdown('''<p style='font-size: 25px; color: #008000;'>Consultor de Whirlpool </p>''', unsafe_allow_html=True)
           st.write('''
-          -Desarrollo de la arquitectura, diagramas y artefactos AS IS\n
-          -Desarrollo de la arquitectura, diagramas y artefactos TO BE\n
-          -Propuesta de valor ''')
+          -Development of the architecture, diagrams, and AS IS artifacts\n
+          -Development of the architecture, diagrams, and TO BE artifacts\n
+          -Value Proposal ''')
     
         with col6:
           st.markdown('''<p style='font-size: 25px; color: #008000;'>Chubb Gestión del cambio </p>''', unsafe_allow_html=True)
           st.write('''
-          -Propuesta de TI\n
-          -Propuesta de gestión organizacional \n
-          -Desarrollo de la arquitectura, diagramas y artefactos AS IS\n
-          -Desarrollo de la arquitectura, diagramas y artefactos TO BE ''')
+          -IT Proposal\n
+          -Proposal for organizational management \n
+          -Development of the architecture, diagrams, and AS IS artifacts\n
+          -Development of the architecture, diagrams, and TO BE artifacts ''')
     
         st.markdown('________________________')
     
@@ -879,10 +879,10 @@ if sm=='English':
             'Intercampus Estado de México': imagen14,
             'Japon': imagen15,
             'Neoris Hackathon': imagen16,
-            'Presentación Avances Whirlpool': imagen17,
-            'Satelite': imagen18,
-            'Equipo Robótica TecGear': imagen19,
-            'Firma de Título': imagen20,
+            'Presentation Avances Whirlpool': imagen17,
+            'Satellite': imagen18,
+            'Robotic team TecGear': imagen19,
+            'University diplome signature': imagen20,
           }
     
         opciones = list(imagenes.keys())
@@ -892,19 +892,19 @@ if sm=='English':
             st.image(imagen, use_column_width=True)
     
     
-        seleccion = st.selectbox('Selecciona una imagen', opciones)
+        seleccion = st.selectbox('Select an image', opciones)
         mostrar_imagen(imagenes[seleccion])
         st.markdown('________________________')
     
     
     
-        st.header('Otros Proyectos')
+        st.header('Other Projects')
         st.markdown('________________________')
     
         def show_pdf(x):
             with pdfplumber.open(x) as pdf:
                 total_pages = len(pdf.pages)
-                page_number = st.slider("Seleccione una página", 1, total_pages, 1,)
+                page_number = st.slider("Select a page", 1, total_pages, 1,)
     
                 selected_page = pdf.pages[page_number - 1]  # Adjusting index for zero-based indexing
                 image = selected_page.to_image()
