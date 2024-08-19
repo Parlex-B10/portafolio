@@ -380,7 +380,7 @@ if sm=='Español':
     
         filter_df = df[(df["teamname"] == option1) & (df["playername"].isin(option2))]
     
-        total_seconds = filter_df["gamelength"]  # Obtener la duración total en segundos
+        total_seconds = filter_df["gamelength"].sum()/filter_df["gamelength"]  # Obtener la duración total en segundos
         hours = total_seconds // 3600
         minutes = (total_seconds % 3600) // 60
         seconds = total_seconds % 60
