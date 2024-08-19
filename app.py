@@ -273,16 +273,16 @@ if sm=='Español':
         Estoy en constante búsqueda de nuevas habilidades y tecnologías para mantenerme a la vanguardia en mi campo y 
         ofrecer soluciones innovadoras que impulsen la mejora continua y el éxito empresarial.\n
     
-        \nHabilidades:\n
+        Habilidades:\n
         
-            ▪Pensamiento crítico\n
+        ▪Pensamiento crítico\n
         ▪Trabajo en equipo\n
         ▪Interpretación de datos\n
         ▪Innovación\n
         ▪Creatividad\n
         ▪Liderazgo\n
     
-        \nHabilidades tecnológicas:\n
+        Habilidades tecnológicas:\n
         
         ▪Excel\n
         ▪Google Sheets\n
