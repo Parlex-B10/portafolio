@@ -322,9 +322,8 @@ if sm=='Español':
     
       st.markdown('<p class="font">Educación 🎓</p>', unsafe_allow_html=True)
       st.markdown('''<p style='font-size: 25px;'>Ingeniería en Transformación Digital de Negocios </p>''', unsafe_allow_html=True)
-      st.write(f'''Promedio: 95.68 \n
-      Tecnológico de Monterrey, Campus Monterrey \n
-      Agosto 2020 - Junio 2024''')
+      st.write(f'''Promedio: 95.68 \n''')
+      st.write(f'''Tecnológico de Monterrey, Campus Monterrey, Agosto 2020 - Junio 2024''')
     
       st.markdown('<p class="font">Experiencia 💼</p>', unsafe_allow_html=True)
       st.markdown('''<p style='font-size: 25px;'>Digitalent Whirlpool - Analyst D2C LARN 👨🏻‍💻</p>''', unsafe_allow_html=True)
