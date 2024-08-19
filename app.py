@@ -383,7 +383,7 @@ if sm=='Español':
       with st.expander("Raw Data:"):
         st.write(df)
     
-      analysis = st.radio("Selecciona Analisis",('Equipos','Comparar'))
+      analysis = 'Equipos'
       if analysis == 'Equipos':
         colf1, colf2 = st.columns(2)
         with colf1:
@@ -596,7 +596,7 @@ if sm=='Español':
     if selected == 'Dashboard':
       st.header("Dashboard :bar_chart:")
     
-      analysis = st.radio("Selecciona Analisis",('Equipos','Comparar'))
+      analysis = 'Equipos'
       
       if analysis == 'Equipos':
         colf1, colf2 = st.columns(2)
