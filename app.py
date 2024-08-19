@@ -274,6 +274,7 @@ if sm=='Español':
         ofrecer soluciones innovadoras que impulsen la mejora continua y el éxito empresarial.\n
     
         \nHabilidades:\n
+        
         ▪Pensamiento crítico\n
         ▪Trabajo en equipo\n
         ▪Interpretación de datos\n
@@ -282,6 +283,7 @@ if sm=='Español':
         ▪Liderazgo\n
     
         \nHabilidades tecnológicas:\n
+        
         ▪Excel\n
         ▪Google Sheets\n
         ▪SQL\n
