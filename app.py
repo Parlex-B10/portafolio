@@ -69,7 +69,7 @@ def get_data():
   return df
 
 df = get_data()
-sm = st.radio("Selecciona variable",('Español','English'))
+sm = st.radio("Selecciona idioma/Select language",('Español','English'))
 if sm=='Español':
     selected = option_menu(None, ["Sobre Mi","Portafolio" ,"Dashboard","Reporte", "Feedback", "Referencias"],
         icons=["person-vcard", "folder-fill", 'pie-chart-fill','clipboard-data-fill', 'chat-square-heart-fill', 'database-fill'],
