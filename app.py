@@ -303,8 +303,7 @@ if sm=='Español':
         y habilidades para ayudar a las empresas a mejorar sus procesos y alcanzar sus objetivos. Estoy
         siempre buscando nuevos retos y oportunidades para aprender y crecer profesionalmente. 
         Soy una persona comprometida y entusiasta de los retos, siempre en búsqueda de oportunidades 
-        para mejorar y desarrollar mis habilidades. Mi objetivo es generar valor significativo para 
-        la empresa a través de mi constante impulso hacia la mejora continua.
+        para mejorar y desarrollar mis habilidades.
         ''')
     
       with col2:
