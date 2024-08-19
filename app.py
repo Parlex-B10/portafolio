@@ -952,6 +952,7 @@ if sm=='English':
         and business success. \n
     
         \nHabilidades:\n
+        
         ▪Critical Thinking\n
         ▪TeamWork\n
         ▪Data Interpretation\n
@@ -960,6 +961,7 @@ if sm=='English':
         ▪Leadership\n
     
         \nHabilidades tecnológicas:\n
+        
         ▪Excel\n
         ▪Google Sheets\n
         ▪SQL\n
