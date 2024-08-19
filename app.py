@@ -297,8 +297,7 @@ if selected == 'Sobre Mi':
     \nSoy un profesional altamente motivado y con un gran interés en el análisis de datos
     y su aplicación para la toma de decisiones estratégicas. Me apasiona utilizar mi conocimiento
     y habilidades para ayudar a las empresas a mejorar sus procesos y alcanzar sus objetivos. Estoy
-    siempre buscando nuevos retos y oportunidades para aprender y crecer profesionalmente.
-
+    siempre buscando nuevos retos y oportunidades para aprender y crecer profesionalmente.\n
     Soy una persona comprometida y entusiasta de los retos, siempre en búsqueda de oportunidades 
     para mejorar y desarrollar mis habilidades. Mi objetivo es generar valor significativo para 
     la empresa a través de mi constante impulso hacia la mejora continua.
