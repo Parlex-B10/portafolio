@@ -314,7 +314,7 @@ if sm=='Español':
     
       st.markdown('<p class="font">Educación 🎓</p>', unsafe_allow_html=True)
       st.markdown('''<p style='font-size: 25px;'>Ingeniería en Transformación Digital de Negocios </p>''', unsafe_allow_html=True)
-      st.write(f'''Promedio: 95.68 \n''')
+      st.write(f'''Promedio: 95.64 \n''')
       st.write(f'''Tecnológico de Monterrey, Campus Monterrey, Agosto 2020 - Junio 2024''')
       
       st.markdown('<p class="font">Especialización</p>', unsafe_allow_html=True)
@@ -993,7 +993,7 @@ if sm=='English':
     
       st.markdown('<p class="font">Education 🎓</p>', unsafe_allow_html=True)
       st.markdown('''<p style='font-size: 25px;'>Digital Business Transformation Engineering </p>''', unsafe_allow_html=True)
-      st.write(f'''Grade point average: 95.68 \n''')
+      st.write(f'''Grade point average: 95.64 \n''')
       st.write(f'''Tecnológico de Monterrey, Campus Monterrey, August 2020 - June 2024''')
     
       st.markdown('<p class="font">Experience 💼</p>', unsafe_allow_html=True)
