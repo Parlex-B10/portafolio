@@ -952,7 +952,7 @@ if sm=='English':
             'Satellite': imagen18,
             'Robotic team TecGear': imagen19,
             'University diplome signature': imagen20,
-            'Graduation': imagen21
+            'Graduation': imagen21,
             'Hackathon Arca Continental':imagen22
           }
     
