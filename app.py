@@ -254,6 +254,28 @@ if sm=='Español':
         st.subheader("Diseno y Creacion del Expediente Medico")
         DCEM= show_pdf("Diseño y Creación del Expediente Médico.pdf")
         st.markdown('________________________')
+
+        st.subheader("Análisis de las actividades económicas de Amazon")
+        DCEM= show_pdf("Análisis de las actividades económicas de Amazon.pdf")
+        st.markdown('________________________')
+
+        st.subheader("Ciencia de datos")
+        DCEM= show_pdf("Ciencia de datos.pdf")
+        st.markdown('________________________')
+
+        st.subheader("Proyecto integrador TC1030")
+        DCEM= show_pdf("Proyecto integrador TC1030.pdf")
+        st.markdown('________________________')
+
+        st.subheader("Reto IoT red domótica")
+        DCEM= show_pdf("Reto IoT red domótica.pdf")
+        st.markdown('________________________')
+
+        st.subheader("Soluciona un problema automotriz")
+        DCEM= show_pdf("Soluciona un problema automotriz.pdf")
+        st.markdown('________________________')
+
+        
       if opt == 'Certificaciones/Reconocimientos':
         st.markdown('________________________')
     
