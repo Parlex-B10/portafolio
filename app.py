@@ -103,13 +103,6 @@ if sm=='Español':
           - [Proyectos Destacados](#proyectos-destacados)
           - [Experiencias](#experiencias)
           - [Otros Proyectos](#otros-proyectos)
-              - [Project manager](#project-manager)
-              - [Diseno y Creacion del Expediente Medico](#diseno-y-creacion-del-expediente-medico)
-              - [Economia de Amazon](#economia-de-amazon)
-              - [Ciencia de datos](#ciencia-de-datos)
-              - [Proyecto integrador TC1030](#proyecto-integrador-tc1030)
-              - [Reto IoT](#reto-iot)
-              - [Soluciona un problema automotriz](#soluciona-un-problema-automotriz)
          ''', unsafe_allow_html=True)
 
     
@@ -257,11 +250,11 @@ if sm=='Español':
         PM = show_pdf("Project manager.pdf")
         st.markdown('________________________')
         
-        st.subheader("Diseno y Creacion del Expediente Medico")
+        st.subheader("Diseño y Creación del Expediente Médico")
         DCEM = show_pdf("Diseño y Creación del Expediente Médico.pdf")
         st.markdown('________________________')
         
-        st.subheader("Economia de Amazon")
+        st.subheader("Análisis de las actividades económicas de Amazon")
         AEA = show_pdf("Análisis de las actividades económicas de Amazon.pdf")
         st.markdown('________________________')
         
@@ -814,8 +807,6 @@ if sm=='English':
           - [Featured Projects](#featured-projects)
           - [Experiences](#experiences)
           - [Other Projects](#other-projects)
-            - [Proyect manager](#proyect-manager)
-            - [Diseno y Creacion del Expediente Medico](#diseno-y-creacion-del-expediente-medico)
           ''', unsafe_allow_html=True)
     
         st.header('Featured Projects')
@@ -959,12 +950,34 @@ if sm=='English':
                     st.image(img_data)
     
         st.subheader("Project manager")
-        PM= show_pdf("Project manager.pdf")
+        PM = show_pdf("Project manager.pdf")
         st.markdown('________________________')
-    
-        st.subheader("Diseno y Creacion del Expediente Medico")
-        DCEM= show_pdf("Diseño y Creación del Expediente Médico.pdf")
+        
+        st.subheader("Diseño y Creación del Expediente Médico")
+        DCEM = show_pdf("Diseño y Creación del Expediente Médico.pdf")
         st.markdown('________________________')
+        
+        st.subheader("Análisis de las actividades económicas de Amazon")
+        AEA = show_pdf("Análisis de las actividades económicas de Amazon.pdf")
+        st.markdown('________________________')
+        
+        st.subheader("Ciencia de datos")
+        CD = show_pdf("Ciencia de datos.pdf")
+        st.markdown('________________________')
+        
+        st.subheader("Proyecto integrador TC1030")
+        PI_TC1030 = show_pdf("Proyecto integrador TC1030.pdf")
+        st.markdown('________________________')
+        
+        st.subheader("Reto IoT")
+        RIOT = show_pdf("Reto IoT red domótica.pdf")
+        st.markdown('________________________')
+        
+        st.subheader("Soluciona un problema automotriz")
+        SPA = show_pdf("Soluciona un problema automotriz.pdf")
+        st.markdown('________________________')
+
+        
       if opt == 'Certifications/Recognition':
         st.markdown('________________________')
     
