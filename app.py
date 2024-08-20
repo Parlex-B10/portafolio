@@ -327,9 +327,10 @@ if sm=='Español':
                 # Display the PDF on Streamlit
                 st.markdown(pdf_display, unsafe_allow_html=True)
 
-        pdf_file_path = "Alejandro Paredes WHP sin firma.pdf"
+
+        pdf_file_path = "Doc concentración.pdf"
         st.markdown('________________________')
-        st.title('Reconocimiento Whirlpool')
+        st.title('Concentración en Analítica de Datos y Herramientas de Inteligencia Artificial')
         show_pdf(pdf_file_path)
 
         pdf_file_path = "Alejandro Paredes WHP sin firma.pdf"
@@ -337,14 +338,39 @@ if sm=='Español':
         st.title('Reconocimiento Whirlpool')
         show_pdf(pdf_file_path)
 
-        pdf_file_path = "Alejandro Paredes WHP sin firma.pdf"
+        pdf_file_path = "CertificadoDeFinalizacion_Descubre las capacidades de Microsoft Power Apps.pdf"
         st.markdown('________________________')
-        st.title('Reconocimiento Whirlpool')
+        st.title('Certificado Capacidades de Microsoft Power Apps')
         show_pdf(pdf_file_path)
 
-        pdf_file_path = "Alejandro Paredes WHP sin firma.pdf"
+        pdf_file_path = "Alejandro_Paredes.pdf"
         st.markdown('________________________')
-        st.title('Reconocimiento Whirlpool')
+        st.title('DATATHON 2023')
+        show_pdf(pdf_file_path)
+
+        pdf_file_path = "Alejandro Paredes.pdf"
+        st.markdown('________________________')
+        st.title('Analytics Cloud Hack')
+        show_pdf(pdf_file_path)
+          
+        pdf_file_path = "HultPrizeAlejandroParedes.pdf"
+        st.markdown('________________________')
+        st.title('Hult Prize')
+        show_pdf(pdf_file_path)
+
+        pdf_file_path = "Constancia HPLP Alejandro Paredes Balgañón.pdf"
+        st.markdown('________________________')
+        st.title('High Potential Leaders Program')
+        show_pdf(pdf_file_path)
+          
+        pdf_file_path = "Alejandra Paredes Balgañón.pdf"
+        st.markdown('________________________')
+        st.title('Reconocimiento promedio febrero - junio 2021')
+        show_pdf(pdf_file_path)
+          
+        pdf_file_path = "Constancia-Dignidad-Humana- Alejandro Paredes Balgañón.pdf"
+        st.markdown('________________________')
+        st.title('Curso Sensibilización en Dignidad Humana')
         show_pdf(pdf_file_path)
             
     # Sobre Mi
