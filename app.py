@@ -316,9 +316,13 @@ if sm=='Español':
       if opt == 'Certificaciones/Reconocimientos':
         st.markdown('________________________')
 
-        file_path = 'Alejandro Paredes WHP sin firma.pdf'
-        html_string = f'<iframe  src="{file_path}" width="700" height="1000" type="application/pdf">'
-        components.html(html_string, height=1000)
+        def main():
+            st.title('Visualización de PDF')
+            file_path = 'Alejandro Paredes WHP sin firma.pdf'  # Asegúrate de que la ruta es correcta
+            html_string = f'<embed src="{file_path}" width="700" height="1000" type="application/pdf">'
+            components.html(html_string, height=1000)
+        if __name__ == "__main__":
+        main()
             
     # Sobre Mi
     if selected == 'Sobre Mi':
