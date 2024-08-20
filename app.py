@@ -789,7 +789,7 @@ if sm=='Español':
         create_connection().close()
     
         # Mostrar los resultados en Streamlit
-        st.title('Datos desde Snowflake')
+        st.title('Los registros se guarda y se obtienen con Snowflake')
         dfs
     
         with st.form("feedback_form"):
