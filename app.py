@@ -188,6 +188,7 @@ if sm=='Español':
         imagen18 = Image.open(r'satelite.jpg')
         imagen19 = Image.open(r'tecgear.jpeg')
         imagen20 = Image.open(r'titulofirma.jpg')
+        image21 = Image.open(r'Graduación.JPG')
     
         imagenes = {
             'Participación Buen Fin': imagen1,
@@ -210,6 +211,7 @@ if sm=='Español':
             'Satelite': imagen18,
             'Equipo Robótica TecGear': imagen19,
             'Firma de Título': imagen20,
+            'Graduación':imagen21,
           }
     
         opciones = list(imagenes.keys())
