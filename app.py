@@ -211,7 +211,7 @@ if sm=='Español':
             'Satelite': imagen18,
             'Equipo Robótica TecGear': imagen19,
             'Firma de Título': imagen20,
-            'Graduación':imagen21,
+            'Graduación':imagen21
           }
     
         opciones = list(imagenes.keys())
