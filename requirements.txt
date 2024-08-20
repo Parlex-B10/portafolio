@@ -12,4 +12,3 @@ plotly.express
 numpy
 pandas
 snowflake-connector-python
-streamlit.components.v1
