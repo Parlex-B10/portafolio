@@ -986,7 +986,7 @@ if sm=='English':
       st.markdown(""" <style> .font {
       font-size:35px ; font-family: 'Cooper Black'; color: #003399;}
       </style> """,unsafe_allow_html=True)
-      st.markdown('<p class="font">Sobre mi 👨🏻‍💼💻</p>', unsafe_allow_html=True)
+      st.markdown('<p class="font">About me 👨🏻‍💼💻</p>', unsafe_allow_html=True)
       st.write(f'''Welcome to my web page, I am Alejandro Paredes Balgañon.''')
     
       col1, col2 = st.columns([2, 1])
@@ -1042,17 +1042,31 @@ if sm=='English':
       st.write(f'''Tecnológico de Monterrey, Campus Monterrey, August 2020 - June 2024''')
     
       st.markdown('<p class="font">Experience 💼</p>', unsafe_allow_html=True)
+        
+      st.markdown('''<p style='font-size: 25px;'>Farmacias del Ahorro - Omnichannel Data Specialist 📊</p>''', unsafe_allow_html=True)
+      st.write(f'''August 2024 - Present ''')
+      st.write(f'''
+      ▪Creation of Dashboards in Looker
+      ▪Data Extraction in BigQuery
+      ▪Setting Up Campaign Promotions Based on Data Analysis
+      ▪Campaign Planning and Tracking
+      ▪Development and Optimization of Queries
+      ▪Monthly Campaign Results Reporting
+      ''')
+      st.markdown('________________________')
+        
       st.markdown('''<p style='font-size: 25px;'>Digitalent Whirlpool - Analyst D2C LARN 👨🏻‍💻</p>''', unsafe_allow_html=True)
       st.write(f'''September 2023 - August 2024 ''')
       st.write(f'''
-      ▪Creación de Dashboards en Looker Studio \n
-      ▪Tratamiento de datos en Python \n
-      ▪Uso de APIs para obtener información de los sistemas transaccionales \n
-      ▪Análisis de datos y obtención de insights \n
-      ▪Planeación de inversión de presupuestos en Paid media LARN 2024 \n
-      ▪Automatizaciones de procesos \n
-      ▪Proceso de facturación \n
-      ▪Seguimiento de pagos con proveedores''')
+      ▪Create interactive dashboards using Looker Studio
+      ▪Manipulate and analyze data using Python
+      ▪Extract insights from data
+      ▪Access and retrieve data from transactional systems through APIs
+      ▪Manage paid media budgets
+      ▪Automate manual and repetitive tasks
+      ▪Manage the billing process
+      ▪Track and manage payments to vendors
+      ''')
       st.markdown('________________________')
     
       contacto_style = """<style>.contacto-section {
@@ -1063,7 +1077,7 @@ if sm=='English':
           }</style>"""
     
       st.markdown(contacto_style, unsafe_allow_html=True)
-      st.markdown('<p class="font">Contactar 🔔</p>', unsafe_allow_html=True)
+      st.markdown('<p class="font">Contact 🔔</p>', unsafe_allow_html=True)
     
       st.markdown('''
       <p class="contacto-section">
