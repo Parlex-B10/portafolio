@@ -188,7 +188,7 @@ if sm=='Español':
         imagen18 = Image.open(r'satelite.jpg')
         imagen19 = Image.open(r'tecgear.jpeg')
         imagen20 = Image.open(r'titulofirma.jpg')
-        image21 = Image.open(r'Graduación.JPG')
+        imagen21 = Image.open(r'Graduación.JPG')
     
         imagenes = {
             'Participación Buen Fin': imagen1,
