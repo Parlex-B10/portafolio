@@ -1037,7 +1037,7 @@ if sm=='English':
         and visualization. I have experience in data transformation and analysis for strategic 
         decision-making, as well as in creating dashboards that have significantly optimized KPI 
         monitoring and decision-making. I am constantly seeking new skills and technologies to stay 
-        at the forefront of my field and provide innovative solutions that drive continuous improvement 
+        at the vanguard of my field and provide innovative solutions that drive continuous improvement 
         and business success. \n
     
         \nSkills:\n
