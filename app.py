@@ -224,6 +224,7 @@ if sm=='Español':
         imagen19 = Image.open(r'tecgear.jpeg')
         imagen20 = Image.open(r'titulofirma.jpg')
         imagen21 = Image.open(r'Graduación.JPG')
+        imagen22=Image.open(r'hackathon arca.JPG')
     
         imagenes = {
             'Participación Buen Fin': imagen1,
@@ -236,7 +237,7 @@ if sm=='Español':
             'Snowflake': imagen8,
             'Whirlpool': imagen9,
             'CENMUN': imagen10,
-            'Datathon': imagen11,
+            'Datathon Viva Aerobus': imagen11,
             'HultPrize': imagen12,
             'Intercampus Queretaro': imagen13,
             'Intercampus Estado de México': imagen14,
@@ -246,7 +247,8 @@ if sm=='Español':
             'Satelite': imagen18,
             'Equipo Robótica TecGear': imagen19,
             'Firma de Título': imagen20,
-            'Graduación':imagen21
+            'Graduación':imagen21,
+            'Hackathon Arca Continental':imagen22
           }
     
         opciones = list(imagenes.keys())
@@ -927,6 +929,7 @@ if sm=='English':
         imagen19 = Image.open(r'tecgear.jpeg')
         imagen20 = Image.open(r'titulofirma.jpg')
         imagen21 = Image.open(r'Graduación.JPG')
+        imagen22 = Image.open(r'hackathon arca.JPG')
     
         imagenes = {
             'Buen Fin Whirlpool': imagen1,
@@ -943,13 +946,14 @@ if sm=='English':
             'HultPrize': imagen12,
             'Intercampus Queretaro': imagen13,
             'Intercampus Estado de México': imagen14,
-            'Japon': imagen15,
+            'Japan': imagen15,
             'Neoris Hackathon': imagen16,
             'Presentation Whirlpool': imagen17,
             'Satellite': imagen18,
             'Robotic team TecGear': imagen19,
             'University diplome signature': imagen20,
             'Graduation': imagen21
+            'Hackathon Arca Continental':imagen22
           }
     
         opciones = list(imagenes.keys())
