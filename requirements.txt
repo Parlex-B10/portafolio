@@ -12,4 +12,3 @@ plotly.express
 numpy
 pandas
 snowflake-connector-python
-base64
