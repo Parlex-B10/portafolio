@@ -114,7 +114,7 @@ if sm=='Español':
         with col101:
           st.markdown('''<p style='font-size: 25px; color: #008000;'>CEMEX WaterManagement </p>''', unsafe_allow_html=True)
           st.write('''
-          -Conexión entre Streamlit a Snowflake \n
+          -Conexión entre Streamlit y Snowflake \n
           -App para obtener datos de la gestión del agua en las plantas de CEMEX en Streamlit & PowerApps\n
           -Conexión entre Snowflake y PowerBI\n
           -Creación de Dashboard con los datos recopilados en PowerBI\n
