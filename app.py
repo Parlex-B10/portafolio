@@ -110,6 +110,7 @@ if sm=='Español':
               - [Proyecto integrador TC1030](#proyecto-integrador-tc1030)
               - [Reto IoT](#reto-iot)
               - [Soluciona un problema automotriz](#soluciona-un-problema-automotriz)
+        ''', unsafe_allow_html=True)
 
     
         st.header('Proyectos Destacados')
