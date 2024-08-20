@@ -893,7 +893,7 @@ if sm=='English':
         imagen21 = Image.open(r'Graduación.JPG')
     
         imagenes = {
-            'Participación Buen Fin': imagen1,
+            'Buen Fin Whirlpool': imagen1,
             'CISCO': imagen2,
             'Chubb': imagen3,
             'Linkedin': imagen4,
@@ -909,11 +909,11 @@ if sm=='English':
             'Intercampus Estado de México': imagen14,
             'Japon': imagen15,
             'Neoris Hackathon': imagen16,
-            'Presentation Avances Whirlpool': imagen17,
+            'Presentation Whirlpool': imagen17,
             'Satellite': imagen18,
             'Robotic team TecGear': imagen19,
             'University diplome signature': imagen20,
-            'Graduación': imagen21
+            'Graduation': imagen21
           }
     
         opciones = list(imagenes.keys())
