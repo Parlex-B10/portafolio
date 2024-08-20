@@ -1111,6 +1111,64 @@ if sm=='English':
         
       if opt == 'Certifications/Recognition':
         st.markdown('________________________')
+        def show_pdf(file_path):
+            """Utility function to display a PDF file in Streamlit"""
+            # Open the file in binary mode
+            with open(file_path, "rb") as file:
+                # Read the file content
+                pdf_data = file.read()
+                # Encode PDF data to base64 string
+                base64_pdf = base64.b64encode(pdf_data).decode('utf-8')
+                # Create an HTML element with the PDF embedded
+                pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" type="application/pdf" style="width:100%; height:100vh;"></iframe>'
+                # Display the PDF on Streamlit
+                st.markdown(pdf_display, unsafe_allow_html=True)
+
+
+        pdf_file_path = "Doc concentración.pdf"
+        st.markdown('________________________')
+        st.title('Concentration in Data Analytics and Artificial Intelligence Tools')
+        show_pdf(pdf_file_path)
+
+        pdf_file_path = "Alejandro Paredes WHP sin firma.pdf"
+        st.markdown('________________________')
+        st.title('Whirlpool Recognition')
+        show_pdf(pdf_file_path)
+
+        pdf_file_path = "CertificadoDeFinalizacion_Descubre las capacidades de Microsoft Power Apps.pdf"
+        st.markdown('________________________')
+        st.title('Microsoft Power Apps Capabilities Certificate')
+        show_pdf(pdf_file_path)
+
+        pdf_file_path = "Alejandro_Paredes.pdf"
+        st.markdown('________________________')
+        st.title('DATATHON 2023')
+        show_pdf(pdf_file_path)
+
+        pdf_file_path = "Alejandro Paredes.pdf"
+        st.markdown('________________________')
+        st.title('Analytics Cloud Hack')
+        show_pdf(pdf_file_path)
+          
+        pdf_file_path = "HultPrizeAlejandroParedes.pdf"
+        st.markdown('________________________')
+        st.title('Hult Prize')
+        show_pdf(pdf_file_path)
+
+        pdf_file_path = "Constancia HPLP Alejandro Paredes Balgañón.pdf"
+        st.markdown('________________________')
+        st.title('High Potential Leaders Program')
+        show_pdf(pdf_file_path)
+          
+        pdf_file_path = "Alejandra Paredes Balgañón.pdf"
+        st.markdown('________________________')
+        st.title('Grade Point Average Recognition February - June 2021')
+        show_pdf(pdf_file_path)
+          
+        pdf_file_path = "Constancia-Dignidad-Humana- Alejandro Paredes Balgañón.pdf"
+        st.markdown('________________________')
+        st.title('Human Dignity Awareness Course')
+        show_pdf(pdf_file_path)
     
     # About me
     if selected == 'About me':
@@ -1175,6 +1233,10 @@ if sm=='English':
       st.markdown('''<p style='font-size: 25px;'>Digital Business Transformation Engineering </p>''', unsafe_allow_html=True)
       st.write(f'''Grade point average: 95.64 \n''')
       st.write(f'''Tecnológico de Monterrey, Campus Monterrey, August 2020 - June 2024''')
+
+        st.markdown('<p class="font">Specialization</p>', unsafe_allow_html=True)
+      st.markdown('''<p style='font-size: 25px;'>Data Analytics and Artificial Intelligence Tools </p>''', unsafe_allow_html=True)
+      st.write(f'''Tecnológico de Monterrey, Campus Monterrey, August 2023 - December 2023''')
     
       st.markdown('<p class="font">Experience 💼</p>', unsafe_allow_html=True)
         
