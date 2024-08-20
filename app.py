@@ -352,7 +352,7 @@ if sm=='Español':
         ofrecer soluciones innovadoras que impulsen la mejora continua y el éxito empresarial.\n
         ''')
           
-        
+        st.write(f'''Habilidades:\n     
         ▪Pensamiento crítico\n
         ▪Trabajo en equipo\n
         ▪Interpretación de datos\n
