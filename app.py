@@ -875,7 +875,7 @@ if sm=='English':
     
     # Referencias
     if selected == "References":
-      st.markdown('<p class="font">Referencias 📑</p>', unsafe_allow_html=True)
+      st.markdown('<p class="font">References 📑</p>', unsafe_allow_html=True)
     
       url_Streaming = "https://www.kaggle.com/datasets/barthetur/league-of-legends-2024-competitive-game-dataset/data"
       st.write(f'''For this project, I used a League of Legends databes from kagle:
@@ -905,6 +905,35 @@ if sm=='English':
     
         st.header('Featured Projects')
         st.markdown('________________________')
+        col101, col102, col103 = st.columns([1, 1,1])
+        
+        with col101:
+          st.markdown('''<p style='font-size: 25px; color: #008000;'>CEMEX WaterManagement </p>''', unsafe_allow_html=True)
+          st.write('''
+          -Connection between Streamlit and Snowflake \n
+          -App for managing water data at CEMEX plants in Streamlit & PowerApps\n
+          -Connection between Snowflake and PowerBI\n
+          -Creation of a Dashboard with the collected data in PowerBI\n
+          -Executive Presentation''')
+
+        with col102:
+          st.markdown('''<p style='font-size: 25px; color: #008000;'>CII.IA Project Manager </p>''', unsafe_allow_html=True)
+          st.write('''
+          -Innovative technology project using IA \n
+          -Project management with tools like gantt, risk, sources and profitability analysis\n
+          -Value proposal and development plan for the technological idea\n
+          -Executive Presentation''')
+
+
+        with col103:
+          st.markdown('''<p style='font-size: 25px; color: #008000;'> QUIMMCO Data Analyst </p>''', unsafe_allow_html=True)
+          st.write('''
+          -ETL process in python \n
+          -Creation of a Machine Learning Model to detect defective parts\n
+          -Creation of a Dashboard in Looker Studio\n
+          -Executive Presentation''')
+            
+        st.markdown('________________________')
     
         col1, col2, col3 = st.columns([1, 1,1])
     
@@ -914,14 +943,16 @@ if sm=='English':
           st.write('''
           -Design and creation of Datawarehouse in SQL \n
           -ETL process in SQL \n
-          -Dashboard creation in Tableau''')
+          -Dashboard creation in Tableau\n
+          -Executive Presentation''')
     
         with col2:
           st.markdown('''<p style='font-size: 25px; color: #008000;'>Data Visualization for LabNL </p>''', unsafe_allow_html=True)
           st.write('''
           -Value Proposal in Water Management\n
           -Creation of the Water Map to show the location of the different water sources in Tableau\n
-          -Creation of a Dashboard with graphics, KPIs, and filters using water source data in Tableau\n
+          -Creation of a Dashboard with graphics, KPIs, and filters using water source data in Tableau\n\n
+          -Executive Presentation
           Link: https://wiki.labnuevoleon.mx/index.php?title=Innovaci%C3%B3n_para_Iniciativas_de_Transformaci%C3%B3n_Digital_-_Rastreo_del_Agua_de_Nuevo_Le%C3%B3n_equipo_2 ''')
     
         with col3:
@@ -929,7 +960,8 @@ if sm=='English':
           st.write('''
           -ETL process in SQL\n
           -Data Analysis to obtain insights\n
-          -Creation of a Dashboard in PowerBI ''')
+          -Creation of a Dashboard in PowerBI\n
+          -Executive Presentation ''')
     
         st.markdown('________________________')
     
@@ -937,27 +969,30 @@ if sm=='English':
     
     
         with col4:
-          st.markdown('''<p style='font-size: 25px; color: #008000;'>Consultor de Neufeld </p>''', unsafe_allow_html=True)
+          st.markdown('''<p style='font-size: 25px; color: #008000;'>Neufeld Consultant </p>''', unsafe_allow_html=True)
           st.write('''
           -Proposal to improve your digital business \n
           -Cost and revenue to determine profitability \n
           -Development of the architecture, diagrams, and AS IS artifacts \n
-          -Development of the architecture, diagrams, and TO BE artifacts \n''')
+          -Development of the architecture, diagrams, and TO BE artifacts\n
+          -Executive Presentation''')
     
         with col5:
-          st.markdown('''<p style='font-size: 25px; color: #008000;'>Consultor de Whirlpool </p>''', unsafe_allow_html=True)
+          st.markdown('''<p style='font-size: 25px; color: #008000;'>Whirlpool Consultant</p>''', unsafe_allow_html=True)
           st.write('''
           -Development of the architecture, diagrams, and AS IS artifacts\n
           -Development of the architecture, diagrams, and TO BE artifacts\n
-          -Value Proposal ''')
+          -Value Proposal\n
+          -Executive Presentation ''')
     
         with col6:
-          st.markdown('''<p style='font-size: 25px; color: #008000;'>Chubb Gestión del cambio </p>''', unsafe_allow_html=True)
+          st.markdown('''<p style='font-size: 25px; color: #008000;'>Chubb Change Management </p>''', unsafe_allow_html=True)
           st.write('''
           -IT Proposal\n
           -Proposal for organizational management \n
           -Development of the architecture, diagrams, and AS IS artifacts\n
-          -Development of the architecture, diagrams, and TO BE artifacts ''')
+          -Development of the architecture, diagrams, and TO BE artifacts\n
+          -Executive Presentation ''')
     
         st.markdown('________________________')
     
@@ -1049,27 +1084,27 @@ if sm=='English':
         PM = show_pdf("Project manager.pdf")
         st.markdown('________________________')
         
-        st.subheader("Diseño y Creación del Expediente Médico")
+        st.subheader("Desing and Creation of a Medical Record")
         DCEM = show_pdf("Diseño y Creación del Expediente Médico.pdf")
         st.markdown('________________________')
         
-        st.subheader("Análisis de las actividades económicas de Amazon")
+        st.subheader("Analysis of Amazon's Economic Activities")
         AEA = show_pdf("Análisis de las actividades económicas de Amazon.pdf")
         st.markdown('________________________')
         
-        st.subheader("Ciencia de datos")
+        st.subheader("Data Science")
         CD = show_pdf("Ciencia de datos.pdf")
         st.markdown('________________________')
         
-        st.subheader("Proyecto integrador TC1030")
+        st.subheader("Integrative Project TC1030")
         PI_TC1030 = show_pdf("Proyecto integrador TC1030.pdf")
         st.markdown('________________________')
         
-        st.subheader("Reto IoT")
+        st.subheader("IoT Challege")
         RIOT = show_pdf("Reto IoT red domótica.pdf")
         st.markdown('________________________')
         
-        st.subheader("Soluciona un problema automotriz")
+        st.subheader("Solve an Automotive Problem")
         SPA = show_pdf("Soluciona un problema automotriz.pdf")
         st.markdown('________________________')
 
@@ -1095,7 +1130,9 @@ if sm=='English':
         monitoring and decision-making. I am constantly seeking new skills and technologies to stay 
         at the vanguard of my field and provide innovative solutions that drive continuous improvement 
         and business success. \n
-    
+        ''')
+          
+        st.write(f'''
         \nSkills:\n
         
         ▪Critical Thinking\n
@@ -1104,7 +1141,9 @@ if sm=='English':
         ▪Innovation\n
         ▪Creativity\n
         ▪Leadership\n
-    
+        ''')
+          
+        st.write(f'''
         \nIT Skills:\n
         
         ▪Excel\n
