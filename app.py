@@ -315,13 +315,11 @@ if sm=='Español':
         
       if opt == 'Certificaciones/Reconocimientos':
         st.markdown('________________________')
-        
-        # Asume que tienes un archivo PDF llamado 'ejemplo.pdf' en el mismo directorio que tu script.
-        file_path = 'Alejandro Paredes WHP sin firma.pdf'
 
-        # Incrusta el PDF en la página
-        components.html(f"""<embed src="{file_path}" width="700" height="1000" type="application/pdf">""",height=1000)
-    
+        file_path = 'Alejandro Paredes WHP sin firma.pdf'
+        html_string = f'<embed src="{file_path}" width="700" height="1000" type="application/pdf">'
+        components.html(html_string, height=1000)
+            
     # Sobre Mi
     if selected == 'Sobre Mi':
       st.markdown(""" <style> .font {
