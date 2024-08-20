@@ -323,7 +323,7 @@ if sm=='Español':
                 # Encode PDF data to base64 string
                 base64_pdf = base64.b64encode(pdf_data).decode('utf-8')
                 # Create an HTML element with the PDF embedded
-                pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" type="application/pdf"></iframe>'
+                pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" type="application/pdf" style="width:100%; height:100vh;"></iframe>'
                 # Display the PDF on Streamlit
                 st.markdown(pdf_display, unsafe_allow_html=True)
 
