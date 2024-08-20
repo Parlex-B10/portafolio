@@ -1234,7 +1234,7 @@ if sm=='English':
       st.write(f'''Grade point average: 95.64 \n''')
       st.write(f'''Tecnológico de Monterrey, Campus Monterrey, August 2020 - June 2024''')
 
-        st.markdown('<p class="font">Specialization</p>', unsafe_allow_html=True)
+      st.markdown('<p class="font">Specialization</p>', unsafe_allow_html=True)
       st.markdown('''<p style='font-size: 25px;'>Data Analytics and Artificial Intelligence Tools </p>''', unsafe_allow_html=True)
       st.write(f'''Tecnológico de Monterrey, Campus Monterrey, August 2023 - December 2023''')
     
