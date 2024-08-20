@@ -9,7 +9,7 @@ import tempfile
 from streamlit_star_rating import st_star_rating
 import tempfile
 import snowflake.connector
-
+import streamlit.components.v1 as components
 
 # Configuración de conexión a Snowflake
 def create_connection():
@@ -316,14 +316,11 @@ if sm=='Español':
       if opt == 'Certificaciones/Reconocimientos':
         st.markdown('________________________')
         
-        def show_pdf(file_path):
-            with open(file_path, "rb") as f:
-                base64_pdf = base64.b64encode(f.read()).decode('utf-8')
-            pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="700" height="1000" type="application/pdf"></iframe>'
-            st.markdown(pdf_display, unsafe_allow_html=True)
-    
-        show_pdf("Alejandro Paredes WHP sin firma.pdf")
+        # Asume que tienes un archivo PDF llamado 'ejemplo.pdf' en el mismo directorio que tu script.
+        file_path = 'Alejandro Paredes WHP sin firma.pdf'
 
+        # Incrusta el PDF en la página
+        components.html(f"""<embed src="{file_path}" width="700" height="1000" type="application/pdf">""",height=1000)
     
     # Sobre Mi
     if selected == 'Sobre Mi':
