@@ -9,7 +9,7 @@ import tempfile
 from streamlit_star_rating import st_star_rating
 import tempfile
 import snowflake.connector
-import streamlit.components.v1 as components
+import base64
 
 # Configuración de conexión a Snowflake
 def create_connection():
@@ -316,12 +316,24 @@ if sm=='Español':
       if opt == 'Certificaciones/Reconocimientos':
         st.markdown('________________________')
 
-        def main():
-            st.title('Visualización de PDF')
-            file_path = 'Alejandro Paredes WHP sin firma.pdf'  # Asegúrate de que la ruta es correcta
-            html_string = f'<embed src="{file_path}" width="700" height="1000" type="application/pdf">'
-            components.html(html_string, height=1000)
-        main()
+        def show_pdf(file_path):
+            """Utility function to display a PDF file in Streamlit"""
+            # Open the file in binary mode
+            with open(file_path, "rb") as file:
+                # Read the file content
+                pdf_data = file.read()
+                # Encode PDF data to base64 string
+                base64_pdf = base64.b64encode(pdf_data).decode('utf-8')
+                # Create an HTML element with the PDF embedded
+                pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="700" height="1000" type="application/pdf"></iframe>'
+                # Display the PDF on Streamlit
+                st.markdown(pdf_display, unsafe_allow_html=True)
+
+        # Path to your PDF file
+        pdf_file_path = "Alejandro Paredes WHP sin firma.pdf"
+
+        # Call the function to display the PDF
+        show_pdf(pdf_file_path)
             
     # Sobre Mi
     if selected == 'Sobre Mi':
