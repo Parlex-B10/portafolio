@@ -329,7 +329,21 @@ if sm=='Español':
 
         pdf_file_path = "Alejandro Paredes WHP sin firma.pdf"
         st.markdown('________________________')
+        st.title('Reconocimiento Whirlpool')
+        show_pdf(pdf_file_path)
 
+        pdf_file_path = "Alejandro Paredes WHP sin firma.pdf"
+        st.markdown('________________________')
+        st.title('Reconocimiento Whirlpool')
+        show_pdf(pdf_file_path)
+
+        pdf_file_path = "Alejandro Paredes WHP sin firma.pdf"
+        st.markdown('________________________')
+        st.title('Reconocimiento Whirlpool')
+        show_pdf(pdf_file_path)
+
+        pdf_file_path = "Alejandro Paredes WHP sin firma.pdf"
+        st.markdown('________________________')
         st.title('Reconocimiento Whirlpool')
         show_pdf(pdf_file_path)
             
