@@ -103,14 +103,14 @@ if sm=='Español':
           - [Proyectos Destacados](#proyectos-destacados)
           - [Experiencias](#experiencias)
           - [Otros Proyectos](#otros-proyectos)
-            - [Project manager](#project-manager)
-            - [Diseno y Creacion del Expediente Medico](#diseno-y-creacion-del-expediente-medico)
-            - [Actividades economicas de amazon](#actividades-economicas-de-amazon)
-            - [Ciencia de datos](#ciencia-de-datos)
-            - [Proyecto integrador TC1030](#proyecto-integrador-tc1030)
-            - [Reto iot](#reto-iot)
-            - [Soluciona un problema automotriz](#soluciona-un-problema-automotriz)
-          ''', unsafe_allow_html=True)
+              - [Project manager](#project-manager)
+              - [Diseño y Creación del Expediente Médico](#diseno-y-creacion-del-expediente-medico)
+              - [Actividades económicas de Amazon](#actividades-economicas-de-amazon)
+              - [Ciencia de datos](#ciencia-de-datos)
+              - [Proyecto integrador TC1030](#proyecto-integrador-tc1030)
+              - [Reto IoT](#reto-iot)
+              - [Soluciona un problema automotriz](#soluciona-un-problema-automotriz)
+
     
         st.header('Proyectos Destacados')
         st.markdown('________________________')
@@ -253,31 +253,31 @@ if sm=='Español':
                     st.image(img_data)
     
         st.subheader("Project manager")
-        PM= show_pdf("Project manager.pdf")
+        PM = show_pdf("Project manager.pdf")
         st.markdown('________________________')
-    
-        st.subheader("Diseno y Creacion del Expediente Medico")
-        DCEM= show_pdf("Diseño y Creación del Expediente Médico.pdf")
+        
+        st.subheader("Diseño y Creación del Expediente Médico")
+        DCEM = show_pdf("Diseño y Creación del Expediente Médico.pdf")
         st.markdown('________________________')
-
-        st.subheader("Actividades economicas de amazon")
-        DCEM= show_pdf("Análisis de las actividades económicas de Amazon.pdf")
+        
+        st.subheader("Actividades económicas de Amazon")
+        AEA = show_pdf("Análisis de las actividades económicas de Amazon.pdf")
         st.markdown('________________________')
-
+        
         st.subheader("Ciencia de datos")
-        DCEM= show_pdf("Ciencia de datos.pdf")
+        CD = show_pdf("Ciencia de datos.pdf")
         st.markdown('________________________')
-
+        
         st.subheader("Proyecto integrador TC1030")
-        DCEM= show_pdf("Proyecto integrador TC1030.pdf")
+        PI_TC1030 = show_pdf("Proyecto integrador TC1030.pdf")
         st.markdown('________________________')
-
-        st.subheader("Reto iot")
-        DCEM= show_pdf("Reto IoT red domótica.pdf")
+        
+        st.subheader("Reto IoT")
+        RIOT = show_pdf("Reto IoT red domótica.pdf")
         st.markdown('________________________')
-
+        
         st.subheader("Soluciona un problema automotriz")
-        DCEM= show_pdf("Soluciona un problema automotriz.pdf")
+        SPA = show_pdf("Soluciona un problema automotriz.pdf")
         st.markdown('________________________')
 
         
