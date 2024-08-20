@@ -321,7 +321,6 @@ if sm=='Español':
             file_path = 'Alejandro Paredes WHP sin firma.pdf'  # Asegúrate de que la ruta es correcta
             html_string = f'<embed src="{file_path}" width="700" height="1000" type="application/pdf">'
             components.html(html_string, height=1000)
-        if __name__ == "__main__":
         main()
             
     # Sobre Mi
