@@ -107,6 +107,35 @@ if sm=='Español':
 
     
         st.header('Proyectos Destacados')
+
+        st.markdown('________________________')
+        col101, col102, col103 = st.columns([1, 1,1])
+        
+        with col101:
+          st.markdown('''<p style='font-size: 25px; color: #008000;'>CEMEX WaterManagement </p>''', unsafe_allow_html=True)
+          st.write('''
+          -Conexión entre Streamlit a Snowflake \n
+          -App para obtener datos de la gestión del agua en las plantas de CEMEX en Streamlit & PowerApps\n
+          -Conexión entre Snowflake y PowerBI\n
+          -Creación de Dashboard con los datos recopilados en PowerBI\n
+          -Presentación ejecutiva''')
+
+        with col102:
+          st.markdown('''<p style='font-size: 25px; color: #008000;'>CII.IA Project Manager </p>''', unsafe_allow_html=True)
+          st.write('''
+          -Proyecto de innovación tecnología utilizando IA \n
+          -Gestión de proyecto con herramienrtas como gantt, riesgos, financiamiento y rentabilidad.\n
+          -Presentación ejecutiva''')
+
+
+        with col103:
+          st.markdown('''<p style='font-size: 25px; color: #008000;'> QUIMMCO Analista de Datos </p>''', unsafe_allow_html=True)
+          st.write('''
+          -Limpieza y corrección de datos en python \n
+          -Creación de Modelo de Machine Learning para detectar piezas defectuosas\n
+          -Creación de Dashboard en Looker Studio\n
+          -Presentación ejecutiva''')
+            
         st.markdown('________________________')
     
         col1, col2, col3 = st.columns([1, 1,1])
@@ -117,7 +146,8 @@ if sm=='Español':
           st.write('''
           -Limpieza y corrección de datos en SQL \n
           -Diseño de un Datawarehouse en SQL\n
-          -Creación de Dashboards en Tableau''')
+          -Creación de Dashboards en Tableau\n
+          -Presentación ejecutiva''')
     
         with col2:
           st.markdown('''<p style='font-size: 25px; color: #008000;'>LabNL Visualización de Datos </p>''', unsafe_allow_html=True)
@@ -125,6 +155,7 @@ if sm=='Español':
           -Propuesta de valor en la administración del agua de N.L.\n
           -Creación de mapa para mostrar la ubicación de las fuentes de agua de N.L. en Tableau\n
           -Dashboard con gráficas, KPIs y filtros para visualizar la información\n
+          -Presentación ejecutiva\n
           Liga: https://wiki.labnuevoleon.mx/index.php?title=Innovaci%C3%B3n_para_Iniciativas_de_Transformaci%C3%B3n_Digital_-_Rastreo_del_Agua_de_Nuevo_Le%C3%B3n_equipo_2 ''')
     
         with col3:
@@ -132,7 +163,8 @@ if sm=='Español':
           st.write('''
           -Limpieza y corrección de datos en SQL\n
           -Análisis de los datos para obtener insights\n
-          -Creación de Dashboards en Power BI ''')
+          -Creación de Dashboards en Power BI\n
+          -Presentación ejecutiva''')
     
         st.markdown('________________________')
     
@@ -145,14 +177,16 @@ if sm=='Español':
           -Propuesta para mejorar su negocio digital \n
           -Costos e ingresos para saber la rentabilidad \n
           -Desarrollo de la arquitectura, diagramas y artefactos AS IS \n
-          -Desarrollo de la arquitectura, diagramas y artefactos TO BE \n''')
+          -Desarrollo de la arquitectura, diagramas y artefactos TO BE \n
+          -Presentación ejecutiva''')
     
         with col5:
           st.markdown('''<p style='font-size: 25px; color: #008000;'>Consultor de Whirlpool </p>''', unsafe_allow_html=True)
           st.write('''
           -Desarrollo de la arquitectura, diagramas y artefactos AS IS\n
           -Desarrollo de la arquitectura, diagramas y artefactos TO BE\n
-          -Propuesta de valor ''')
+          -Propuesta de valor\n
+          -Presentación ejecutiva''')
     
         with col6:
           st.markdown('''<p style='font-size: 25px; color: #008000;'>Chubb Gestión del cambio </p>''', unsafe_allow_html=True)
@@ -160,7 +194,8 @@ if sm=='Español':
           -Propuesta de TI\n
           -Propuesta de gestión organizacional \n
           -Desarrollo de la arquitectura, diagramas y artefactos AS IS\n
-          -Desarrollo de la arquitectura, diagramas y artefactos TO BE ''')
+          -Desarrollo de la arquitectura, diagramas y artefactos TO BE \n
+          -Presentación ejecutiva''')
     
         st.markdown('________________________')
     
@@ -354,7 +389,7 @@ if sm=='Español':
       ▪Establecer promociones de campañas en base al análisis de datos \n
       ▪Planeación y seguimiento de campañas\n
       ▪Desarrollo y Optimización de Queries\n
-      ▪Reportes de resultados de capañas mensual''')
+      ▪Reportes de resultados de campañas mensual''')
       st.markdown('________________________')
         
       st.markdown('''<p style='font-size: 25px;'>Digitalent Whirlpool - Analyst D2C LARN 👨🏻‍💻</p>''', unsafe_allow_html=True)
