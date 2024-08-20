@@ -105,10 +105,10 @@ if sm=='Español':
           - [Otros Proyectos](#otros-proyectos)
             - [Project manager](#project-manager)
             - [Diseno y Creacion del Expediente Medico](#diseno-y-creacion-del-expediente-medico)
-            - [Analisis de las actividades economicas de Amazon](#analisis-de-las-actividades-economicas-de-amazon)
+            - [Actividades economicas de Amazon](#actividades-economicas-de-amazon)
             - [Ciencia de datos](#ciencia-de-datos)
             - [Proyecto integrador TC1030](#proyecto-integrador-tc1030)
-            - [Reto IoT red domotica](#reto-iot-red-domotica)
+            - [Reto IoT](#reto-iot)
             - [Soluciona un problema automotriz](#soluciona-un-problema-automotriz)
           ''', unsafe_allow_html=True)
     
@@ -260,7 +260,7 @@ if sm=='Español':
         DCEM= show_pdf("Diseño y Creación del Expediente Médico.pdf")
         st.markdown('________________________')
 
-        st.subheader("Analisis de las actividades economicas de Amazon")
+        st.subheader("Actividades economicas de Amazon")
         DCEM= show_pdf("Análisis de las actividades económicas de Amazon.pdf")
         st.markdown('________________________')
 
@@ -272,7 +272,7 @@ if sm=='Español':
         DCEM= show_pdf("Proyecto integrador TC1030.pdf")
         st.markdown('________________________')
 
-        st.subheader("Reto IoT red domotica")
+        st.subheader("Reto IoT")
         DCEM= show_pdf("Reto IoT red domótica.pdf")
         st.markdown('________________________')
 
