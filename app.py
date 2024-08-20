@@ -124,7 +124,8 @@ if sm=='Español':
           st.markdown('''<p style='font-size: 25px; color: #008000;'>CII.IA Project Manager </p>''', unsafe_allow_html=True)
           st.write('''
           -Proyecto de innovación tecnológica utilizando IA \n
-          -Gestión de proyecto con herramienrtas como gantt, riesgos, financiamiento y rentabilidad.\n
+          -Gestión de proyecto con herramientas como gantt, riesgos, financiamiento y rentabilidad.\n
+          -Propuesta de valor y plan de desarrollo de la idea tecnológica\n
           -Presentación ejecutiva''')
 
 
