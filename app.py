@@ -105,10 +105,10 @@ if sm=='Español':
           - [Otros Proyectos](#otros-proyectos)
             - [Project manager](#project-manager)
             - [Diseno y Creacion del Expediente Medico](#diseno-y-creacion-del-expediente-medico)
-            - [Analisis de las actividades economicas de Amazon](#analisis-de-las-actividades-economicas-de-Amazon)
+            - [Analisis de las actividades economicas de Amazon](#analisis-de-las-actividades-economicas-de-amazon)
             - [Ciencia de datos](#ciencia-de-datos)
-            - [Proyecto integrador TC1030](#proyecto-integrador-TC1030)
-            - [Reto IoT red domotica](#reto-IoT-red-domotica)
+            - [Proyecto integrador TC1030](#proyecto-integrador-tc1030)
+            - [Reto IoT red domotica](#reto-iot-red-domotica)
             - [Soluciona un problema automotriz](#soluciona-un-problema-automotriz)
           ''', unsafe_allow_html=True)
     
