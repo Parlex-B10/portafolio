@@ -314,8 +314,6 @@ if sm=='Español':
 
         
       if opt == 'Certificaciones/Reconocimientos':
-        st.markdown('________________________')
-
         def show_pdf(file_path):
             """Utility function to display a PDF file in Streamlit"""
             # Open the file in binary mode
@@ -329,10 +327,10 @@ if sm=='Español':
                 # Display the PDF on Streamlit
                 st.markdown(pdf_display, unsafe_allow_html=True)
 
-        # Path to your PDF file
         pdf_file_path = "Alejandro Paredes WHP sin firma.pdf"
+        st.markdown('________________________')
 
-        # Call the function to display the PDF
+        st.title('Reconocimiento Whirlpool')
         show_pdf(pdf_file_path)
             
     # Sobre Mi
@@ -354,7 +352,6 @@ if sm=='Español':
         ofrecer soluciones innovadoras que impulsen la mejora continua y el éxito empresarial.\n
         ''')
           
-        st.write(f'''Habilidades:\n
         
         ▪Pensamiento crítico\n
         ▪Trabajo en equipo\n
