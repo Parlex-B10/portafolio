@@ -104,8 +104,8 @@ if sm=='Español':
           - [Experiencias](#experiencias)
           - [Otros Proyectos](#otros-proyectos)
               - [Project manager](#project-manager)
-              - [Diseño y Creación del Expediente Médico](#diseno-y-creacion-del-expediente-medico)
-              - [Actividades económicas de Amazon](#actividades-economicas-de-amazon)
+              - [Diseño y Creacion del Expediente Medico](#diseno-y-creacion-del-expediente-medico)
+              - [Actividades economicas de Amazon](#actividades-economicas-de-amazon)
               - [Ciencia de datos](#ciencia-de-datos)
               - [Proyecto integrador TC1030](#proyecto-integrador-tc1030)
               - [Reto IoT](#reto-iot)
@@ -257,11 +257,11 @@ if sm=='Español':
         PM = show_pdf("Project manager.pdf")
         st.markdown('________________________')
         
-        st.subheader("Diseño y Creación del Expediente Médico")
+        st.subheader("Diseño y Creacion del Expediente Medico")
         DCEM = show_pdf("Diseño y Creación del Expediente Médico.pdf")
         st.markdown('________________________')
         
-        st.subheader("Actividades económicas de Amazon")
+        st.subheader("Actividades economicas de Amazon")
         AEA = show_pdf("Análisis de las actividades económicas de Amazon.pdf")
         st.markdown('________________________')
         
